@@ -1,35 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Raghu</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="profile"><div class="avatar"></div><h1>Raghu</h1></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="tools.html">Tools</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="social"><a href="https://linkedin.com" target="_blank">LinkedIn ↗</a></div>
-  </aside>
-<main class="content">
-  <section class="section faded-box">
-    <h2>About Me</h2>
-    <p>
-      I’m a highly experienced Full Stack Java Developer with over 9 years in the tech industry. I've built scalable microservices,
-      crafted user interfaces with Angular, and deployed cloud-native solutions using AWS and Azure.
-    </p>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">RAGHU</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I am <span class="highlight">Raghu</span></h1>
+        <p class="subtitle">Java Full Stack Developer</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" /></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="mailto:you@email.com"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email" /></a>
+        </div>
+        <a href="#" class="btn">📄 Resume</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://undraw.co/api/illustrations/41848812-dca5-4388-bf01-c2f849bcb1cf" alt="Illustration" />
+      </div>
+    </div>
   </section>
-</main>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m Raghu, a Full Stack Java Developer with over 9 years of experience building scalable microservices, user-friendly interfaces, and deploying enterprise systems using Spring Boot, Angular, and AWS.</p>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Enterprise Dashboard – Epson America:</strong> Built a full-stack Angular + Spring Boot dashboard with AWS deployment and CI/CD.</li>
+        <li><strong>Data Reporting Platform – Caterpillar:</strong> Real-time dashboard using React, MongoDB, and Docker, deployed via Azure Pipelines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:you@email.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
