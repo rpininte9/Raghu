@@ -1,0 +1,80 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #f3e7e9;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background-color: #2b2b2b;
+  color: #ff6f61;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ff9e9d;
+}
+
+.hero .intro {
+  font-size: 1rem;
+  color: #f3e7e9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 2rem;
+  background-color: #262626;
+  border-top: 1px solid #444;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  color: #f3e7e9;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-grid h3 {
+  color: #ff9e9d;
+  margin-bottom: 0.5rem;
+}
+
+.skills-grid ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
