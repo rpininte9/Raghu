@@ -219,3 +219,23 @@ body {
   position: relative;
   z-index: 1;
 }
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: start;
+  margin-top: 2rem;
+}
+
+.tech-grid img {
+  height: 40px;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.tech-grid img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(1.1);
+}
+
