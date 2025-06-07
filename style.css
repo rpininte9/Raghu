@@ -420,3 +420,55 @@ body {
     padding: 0.7rem 0.4rem;
   }
 }
+.project-dossier {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.project-entry {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(21,97,109,0.07);
+  padding: 2rem 2.2rem;
+  border-left: 7px solid #15616D;
+}
+.project-entry h3 {
+  margin: 0 0 0.5em 0;
+  color: #15616D;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.project-meta {
+  font-weight: 400;
+  color: #444;
+  font-size: .97em;
+  margin-left: .5em;
+}
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em 2.5em;
+  margin-bottom: 0.8em;
+  margin-top: 0.1em;
+  font-size: 1em;
+  color: #17445e;
+}
+.project-stack span {
+  display: inline-block;
+}
+.project-achievements {
+  margin: 0.6em 0 0 1.2em;
+  padding: 0;
+  color: #212d35;
+  font-size: 1.04em;
+}
+.project-achievements li {
+  margin-bottom: .28em;
+  list-style: disc;
+}
+@media (max-width: 900px) {
+  .project-entry { padding: 1.2rem 1rem; }
+  .project-dossier { gap: 1.6rem; }
+  .project-stack { flex-direction: column; gap: 0.3em 0; }
+}
