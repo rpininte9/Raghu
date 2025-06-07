@@ -541,10 +541,7 @@ li {
     right: auto;
   }
 }
-.back-btn {
-  display: inline-block;
-  margin: 2rem 0 0 2rem;
-  padding: 0.7rem 1.8rem;
+.btn {
   background: var(--accent);
   color: #fff;
   font-weight: 800;
@@ -555,14 +552,20 @@ li {
   box-shadow: 0 2px 10px rgba(36, 63, 110, 0.08);
   transition: background 0.16s, color 0.16s, box-shadow 0.16s;
   border: none;
-  position: relative;
-  top: 1.5rem;
-  left: 0;
+  padding: 0.7rem 1.8rem;
+  display: inline-block;
 }
-.back-btn:hover, .back-btn:focus {
+
+.btn:hover, .btn:focus {
   background: #fff;
   color: var(--accent);
   border: 2px solid var(--accent);
   text-decoration: none;
   box-shadow: 0 4px 16px rgba(36, 63, 110, 0.13);
+}
+
+.back-btn {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
 }
