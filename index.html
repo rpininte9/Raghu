@@ -6,263 +6,133 @@
   <title>Raghu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
   <header class="navbar glass">
     <div class="container">
       <div class="logo">RAGHU</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="visual-resume.html">Visual Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero gradient-bg" id="home" data-aos="fade-up">
-    <div class="container hero-content">
+  <section class="hero gradient-bg" id="home">
+    <div class="container">
       <div class="hero-text">
-        <h1>Hi, I am <span class="highlight">Raghu</span></h1>
-        <p class="subtitle">Sr. Java Full Stack Engineer</p>
+        <h1>Hi, I'm <span>Raghu</span></h1>
+        <div class="subtitle">Sr. Full Stack Engineer • Cloud & DevOps Enthusiast • Problem Solver</div>
+        <p>
+          Passionate about architecting scalable web apps, automating infrastructure, and solving complex business problems with technology. Experienced across frontend, backend, and cloud.
+        </p>
         <div class="social-icons">
-          <a href="https://github.com/rpininte9" target="_blank" rel="noopener">
-            <img src="https://cdn.simpleicons.org/github/22223B" alt="GitHub" />
+          <a href="https://github.com/rpininte9" target="_blank" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
           </a>
-          <a href="https://www.linkedin.com/in/raghuma-reddy/" target="_blank" rel="noopener">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="32" height="32"/>
+          <a href="https://linkedin.com/in/rpininte9" target="_blank" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"/>
           </a>
+          <!-- Add more icons as needed -->
         </div>
-        <a href="Raghu_Resume.pdf" class="btn">📄 Resume</a>
+        <a class="btn" href="Raghu_Resume.pdf" download>Download CV</a>
       </div>
       <div class="hero-image pulse">
-        <img src="Developer.webp" alt="Developer at work" />
+        <img src="Developer.webp" alt="Raghu, Full Stack Developer">
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section glass light-bg" id="about" data-aos="fade-up">
+  <!-- About Section Preview -->
+  <section class="section light-bg" id="about">
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm Raghu, a Senior Java Full Stack Engineer with 9+ years of experience in designing, developing, and deploying scalable web applications, microservices, and enterprise software. My expertise spans Java, Spring Boot, Angular, React, AWS, Azure, DevOps, and modern cloud solutions. I am passionate about building robust backend systems, seamless UIs, and automating everything from CI/CD pipelines to cloud infrastructure.
+        I'm a results-oriented engineer with 8+ years of experience building enterprise applications, modernizing legacy systems, and leading cloud adoption. My toolkit covers Java, Spring Boot, Node.js, Angular, React, AWS, Azure, DevOps, and more.
       </p>
+      <a class="btn" href="about.html">Learn More</a>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects" data-aos="fade-up">
+  <!-- Quick Projects Preview -->
+  <section class="section" id="featured-projects">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-
-        <!-- Epson America -->
-        <div class="project-card glass">
-          <h3>Enterprise Dashboard</h3>
-          <p><strong>Client:</strong> Epson America</p>
-          <p><strong>Dates:</strong> Jun 2021 – Present</p>
-          <p>
-            Developed a dynamic, responsive dashboard using Angular 12, Vue.js, and Spring Boot, deployed on AWS. Implemented microservices architecture, integrated GraphQL and MongoDB, and led CI/CD using Jenkins and Docker. Enhanced performance with Clojure optimizations and introduced robust monitoring using Splunk and Datadog.
-          </p>
-        </div>
-
-        <!-- Caterpillar Inc -->
-        <div class="project-card glass">
-          <h3>Data Reporting Platform</h3>
-          <p><strong>Client:</strong> Caterpillar Inc</p>
-          <p><strong>Dates:</strong> Jul 2019 – May 2021</p>
-          <p>
-            Built a real-time data reporting platform with React, Next.js, Node.js, and MongoDB on Azure and AWS. Engineered microservices, implemented cloud-native deployments, and automated testing with Selenium and Jasmine. Integrated advanced data analytics using Spark and provided Splunk dashboards for operational insights.
-          </p>
-        </div>
-
-        <!-- Cyient -->
-        <div class="project-card glass">
-          <h3>Geospatial Data Management Portal</h3>
-          <p><strong>Client:</strong> Cyient, India</p>
-          <p><strong>Dates:</strong> Dec 2016 – Apr 2018</p>
-          <p>
-            Designed and developed internal applications using Angular 4, Node.js, and Spring Boot connected to Oracle and MongoDB. Implemented centralized configuration, logging with Splunk, and automated CI/CD with Jenkins and Maven. Integrated Azure DevOps for deployment and managed migration to cloud infrastructure.
-          </p>
-        </div>
-
-        <!-- Kellton Tech -->
-        <div class="project-card glass">
-          <h3>Enterprise Resource Planning (ERP) Module</h3>
-          <p><strong>Client:</strong> Kellton Tech, India</p>
-          <p><strong>Dates:</strong> Jun 2015 – Nov 2016</p>
-          <p>
-            Developed ERP modules using Struts MVC, Servlets, JSP, and JDBC. Managed data migration from MySQL to MongoDB, set up high availability clusters, and implemented both server- and client-side validation. Automated builds and deployments with ANT and Chef scripts.
-          </p>
-        </div>
-
+      <h2>Featured Projects</h2>
+      <div class="project-dossier">
+        <article class="project-entry">
+          <h3>Enterprise Dashboard <span class="project-meta">| Epson America</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> Angular 12, Vue.js</span>
+            <span><b>Backend:</b> Spring Boot, Clojure</span>
+            <span><b>Cloud:</b> AWS, Docker</span>
+          </div>
+          <ul class="project-achievements">
+            <li>Re-architected monolith to microservices, improving scalability.</li>
+            <li>Reduced dashboard latency by 40% with GraphQL and MongoDB aggregation.</li>
+          </ul>
+        </article>
+        <article class="project-entry">
+          <h3>Data Reporting Platform <span class="project-meta">| Caterpillar Inc</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> React, Next.js</span>
+            <span><b>Backend:</b> Node.js, REST</span>
+            <span><b>Data:</b> MongoDB, CosmosDB</span>
+          </div>
+          <ul class="project-achievements">
+            <li>Built serverless reporting for 10k+ users, automated blue/green deployments.</li>
+          </ul>
+        </article>
       </div>
+      <a class="btn" href="projects.html">View All Projects</a>
     </div>
   </section>
 
-  <!-- TOOLS & TECHNOLOGIES -->
-  <section class="section glass light-bg" id="tools" data-aos="fade-up">
+  <!-- Skills Preview -->
+  <section class="section light-bg" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="tech-grid">
+        <i class="devicon-java-plain-wordmark" title="Java"></i>
+        <i class="devicon-spring-plain-wordmark" title="Spring Boot"></i>
+        <i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
+        <i class="devicon-angular-plain-wordmark" title="Angular"></i>
+        <i class="devicon-react-original-wordmark" title="React"></i>
+        <i class="devicon-aws-plain-wordmark" title="AWS"></i>
+        <i class="devicon-docker-plain-wordmark" title="Docker"></i>
+        <i class="devicon-git-plain-wordmark" title="Git"></i>
+        <!-- Add more icons as needed -->
+      </div>
+      <a class="btn" href="skills.html">See My Skills</a>
+    </div>
+  </section>
+
+  <!-- Tools Preview -->
+  <section class="section" id="tools">
     <div class="container">
       <h2>Tools & Technologies</h2>
-      <p>Technologies I use frequently:</p>
-      <div class="tech-grid">
-        <i class="devicon-java-plain colored" title="Java"></i>
-        <i class="devicon-spring-plain colored" title="Spring Boot"></i>
-        <i class="devicon-angularjs-plain colored" title="Angular"></i>
-        <i class="devicon-react-original colored" title="React"></i>
-        <i class="devicon-vuejs-plain colored" title="Vue.js"></i>
-        <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-        <i class="devicon-express-original colored" title="Express"></i>
-        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-        <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-        <i class="devicon-python-plain colored" title="Python"></i>
-        <i class="devicon-clojure-line colored" title="Clojure"></i>
-        <i class="devicon-docker-plain colored" title="Docker"></i>
-        <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
-        <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
-        <i class="devicon-azure-plain colored" title="Azure"></i>
-        <i class="devicon-googlecloud-plain colored" title="Google Cloud"></i>
-        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-        <i class="devicon-redis-plain colored" title="Redis"></i>
-        <i class="devicon-mysql-plain colored" title="MySQL"></i>
-        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-        <i class="devicon-oracle-original colored" title="Oracle"></i>
-        <i class="devicon-apachespark-original colored" title="Apache Spark"></i>
-        <i class="devicon-apachekafka-original colored" title="Apache Kafka"></i>
-        <i class="devicon-git-plain colored" title="Git"></i>
-        <i class="devicon-github-original" title="GitHub"></i>
-        <i class="devicon-gitlab-plain colored" title="GitLab"></i>
-        <i class="devicon-jenkins-plain colored" title="Jenkins"></i>
-        <i class="devicon-nginx-original colored" title="Nginx"></i>
-        <i class="devicon-apache-plain colored" title="Maven"></i>
-        <i class="devicon-selenium-original colored" title="Selenium"></i>
-        <i class="devicon-terraform-plain colored" title="Terraform"></i>
-        <i class="devicon-linux-plain colored" title="Linux"></i>
-        <i class="devicon-windows8-original colored" title="Windows"></i>
-        <i class="devicon-jira-plain colored" title="Jira"></i>
-        <i class="devicon-bash-plain colored" title="Bash"></i>
-        <i class="devicon-html5-plain colored" title="HTML5"></i>
-        <i class="devicon-css3-plain colored" title="CSS3"></i>
-        <i class="devicon-sass-original colored" title="SASS"></i>
-        <i class="devicon-redux-original colored" title="Redux"></i>
-        <i class="devicon-yarn-plain colored" title="Yarn"></i>
-        <i class="devicon-jest-plain colored" title="Jest"></i>
-      </div>
-
-      <h3 style="margin-top:2.5rem;">My Skill Levels</h3>
-<div class="skills-bars">
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">Java / J2EE</div>
-      <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
-      <span class="percent">98%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Spring Boot / Spring</div>
-      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-      <span class="percent">95%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Angular</div>
-      <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
-      <span class="percent">93%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">React / Vue.js</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">JavaScript / TypeScript</div>
-      <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
-      <span class="percent">92%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Node.js / Express.js</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Python</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">SQL (Oracle/MySQL/PostgreSQL)</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-  </div>
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">NoSQL (MongoDB/DynamoDB)</div>
-      <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
-      <span class="percent">83%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">AWS / Azure / GCP</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Docker / Kubernetes / OpenShift</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">CI/CD (Jenkins/GitHub Actions/Terraform)</div>
-      <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
-      <span class="percent">87%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Testing (JUnit/Selenium/Jest/PyTest)</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
-      <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
-      <span class="percent">82%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Linux / Windows</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-  </div>
-</div>
-
-  <!-- CONTACT -->
-  <section class="section glass" id="contact" data-aos="fade-up">
-    <div class="container">
-      <h2>Contact</h2>
-      <form class="contact-form" action="mailto:rpininte.09@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <p>
+        Proficient in a wide array of modern tools for development, automation, and cloud, including Docker, Jenkins, GitHub Actions, Terraform, and cloud-native services on AWS and Azure.
+      </p>
+      <a class="btn" href="tools.html">See All Tools</a>
     </div>
   </section>
 
-  <!-- AOS JS (after all content) -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <!-- Contact Preview -->
+  <section class="section light-bg" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Interested in working together or want to connect? Reach out to me for opportunities, collaborations, or just to say hi.
+      </p>
+      <a class="btn" href="contact.html">Contact Me</a>
+    </div>
+  </section>
 </body>
 </html>
