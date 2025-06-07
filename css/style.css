@@ -1,54 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* Camouflage color palette */
+/* Color palette */
 :root {
-  --main-bg: #23281E;           /* deep olive drab */
-  --camo-green1: #8B9A46;       /* moss green */
-  --camo-green2: #B2B388;       /* light olive */
-  --camo-brown: #A67C52;        /* brown/bronze */
-  --camo-dark: #3C4023;         /* darker olive */
-  --accent: #FFD700;            /* gold/khaki for headers */
-  --text-main: #fff;            /* pure white */
+  --main-bg: #181b1f;          /* dark slate */
+  --glass-bg: rgba(28,32,36,0.93);
+  --accent: #FFD700;           /* gold/khaki for headers */
+  --text-main: #fff;           /* pure white */
+  --text-faded: #d2d2d2;
 }
 
-/* Camouflage background for body */
+/* Body and backgrounds */
 body {
-  background-color: var(--main-bg);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='360'><rect width='360' height='360' fill='%2323281E'/><ellipse cx='80' cy='70' rx='80' ry='40' fill='%23B2B388' opacity='0.61'/><ellipse cx='270' cy='80' rx='72' ry='36' fill='%238B9A46' opacity='0.61'/><ellipse cx='290' cy='230' rx='90' ry='38' fill='%23A67C52' opacity='0.61'/><ellipse cx='90' cy='250' rx='95' ry='32' fill='%233C4023' opacity='0.61'/></svg>");
-  background-repeat: repeat;
-  background-size: 400px 400px;
+  background: var(--main-bg);
   font-family: 'Inter', sans-serif;
   color: var(--text-main);
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
-}
-
-/* Overlay for extra contrast and camo depth */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(20, 24, 10, 0.45);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Main containers above overlay */
-#root, main, .container {
-  position: relative;
-  z-index: 1;
-}
-
-.section {
-  margin: 3rem 0;
 }
 
 /* Navbar */
 .navbar {
-  background: rgba(35, 40, 30, 0.90);
-  box-shadow: 0 2px 14px 0 rgba(35, 40, 30, 0.18);
+  background: rgba(24, 27, 31, 0.95);
+  box-shadow: 0 2px 14px 0 rgba(24, 27, 31, 0.18);
   padding: 1.2rem 0;
 }
 
@@ -121,7 +95,7 @@ body::before {
 .social-icons img {
   width: 34px;
   height: 34px;
-  filter: drop-shadow(1px 1px 2px #23281E);
+  filter: drop-shadow(1px 1px 2px #111);
   transition: transform 0.2s;
 }
 .social-icons a:hover img {
@@ -137,7 +111,7 @@ body::before {
   font-weight: 700;
   font-size: 1.1rem;
   text-decoration: none;
-  box-shadow: 0 2px 8px 0 rgba(35,40,30,0.10);
+  box-shadow: 0 2px 8px 0 rgba(24,27,31,0.10);
   transition: background 0.2s, color 0.2s;
 }
 .btn:hover {
@@ -150,13 +124,13 @@ body::before {
   border-radius: 50%;
   border: 4px solid var(--accent);
   background: rgba(255,255,255,0.05);
-  box-shadow: 0 4px 22px 0 rgba(35, 40, 30, 0.20);
+  box-shadow: 0 4px 22px 0 rgba(24, 27, 31, 0.20);
 }
 
 /* Section Headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--accent);
-  text-shadow: 2px 2px 8px #23281E, 0 0 2px #000;
+  text-shadow: 2px 2px 8px #111, 0 0 2px #000;
   font-weight: 700;
   margin-bottom: 0.6em;
 }
@@ -169,7 +143,7 @@ strong, b {
 /* Main text and list styling for readability */
 body, .container, .glass, .project-card, .timeline-content, p, li, ul, ol, span, div {
   color: #fff !important;
-  text-shadow: 2px 2px 8px #23281E, 0 0 2px #000;
+  text-shadow: 1px 1px 5px #181b1f;
 }
 
 ul, ol {
@@ -183,7 +157,7 @@ li {
 
 /* Highlighted text (skills, etc) */
 .highlight {
-  background: rgba(139,154,70,0.18);
+  background: rgba(255,215,0,0.12);
   border-radius: 6px;
   padding: 0.1em 0.5em;
   color: var(--accent);
@@ -191,15 +165,15 @@ li {
 
 /* Glass effect for sections */
 .glass {
-  background: rgba(35, 40, 30, 0.88);
+  background: var(--glass-bg);
   border-radius: 22px;
-  box-shadow: 0 2px 20px 0 rgba(35, 40, 30, 0.18);
+  box-shadow: 0 2px 20px 0 rgba(24, 27, 31, 0.18);
   padding: 2.1rem 2rem;
   margin-bottom: 2.2rem;
 }
 
 .light-bg {
-  background: rgba(139, 154, 70, 0.08);
+  background: rgba(255,255,255,0.04);
 }
 
 /* Tech Icons Grid */
@@ -225,10 +199,10 @@ li {
   min-width: 250px;
 }
 .skill-bar {
-  background: rgba(35,40,30,0.5);
+  background: rgba(28,32,36,0.5);
   border-radius: 10px;
   padding: 0.7em 1em 0.8em 1em;
-  box-shadow: 0 1px 5px 0 rgba(35,40,30,0.09);
+  box-shadow: 0 1px 5px 0 rgba(24,27,31,0.09);
   margin-bottom: 0.5em;
   display: flex;
   align-items: center;
@@ -244,7 +218,7 @@ li {
 }
 .bar {
   flex: 1;
-  background: rgba(139,154,70,0.19);
+  background: #23262c;
   border-radius: 8px;
   height: 11px;
   margin: 0 0.7em;
@@ -253,7 +227,7 @@ li {
 .bar-fill {
   height: 100%;
   border-radius: 8px;
-  background: linear-gradient(90deg, var(--camo-green1) 20%, var(--camo-brown) 100%);
+  background: linear-gradient(90deg, #FFD700 20%, #d2a84e 100%);
   transition: width 1s;
 }
 .percent {
@@ -272,11 +246,11 @@ li {
 }
 
 .project-entry {
-  background: rgba(24, 28, 19, 0.93);
-  box-shadow: 0 4px 24px 0 rgba(35, 40, 30, 0.35);
+  background: var(--glass-bg);
+  box-shadow: 0 4px 24px 0 rgba(18, 20, 22, 0.35);
   border-radius: 20px;
   padding: 2rem 2rem 1.5rem 2rem;
-  border: 1.5px solid rgba(139,154,70,0.20);
+  border: 1.5px solid rgba(255,215,0,0.09);
   color: #fff;
   position: relative;
   z-index: 1;
@@ -292,7 +266,7 @@ li {
 .project-stack {
   font-size: 1em;
   font-weight: 600;
-  color: #F6F8E2;
+  color: #f1f1c8;
   margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -312,7 +286,7 @@ li {
   line-height: 1.6;
   margin-bottom: 0.4em;
   color: #fff;
-  text-shadow: 2px 2px 8px #23281E, 0 0 2px #000;
+  text-shadow: 1px 1px 5px #181b1f;
 }
 
 /* Contact Form */
@@ -328,27 +302,27 @@ li {
   padding: 0.8em 1em;
   border: none;
   border-radius: 8px;
-  background: rgba(139,154,70,0.14);
+  background: #22252a;
   color: #fff;
   font-size: 1.06em;
   font-family: inherit;
-  box-shadow: 0 1px 4px 0 rgba(35,40,30,0.12);
+  box-shadow: 0 1px 4px 0 rgba(24,27,31,0.12);
   resize: vertical;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: 2px solid var(--accent);
-  background: rgba(139,154,70,0.23);
+  background: #262a30;
 }
 .contact-form button {
   background: var(--accent);
-  color: #23281E;
+  color: #181b1f;
   padding: 0.8em 1.7em;
   border: none;
   border-radius: 8px;
   font-weight: 700;
   font-size: 1.1em;
-  box-shadow: 0 2px 8px 0 rgba(35,40,30,0.13);
+  box-shadow: 0 2px 8px 0 rgba(24,27,31,0.13);
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
