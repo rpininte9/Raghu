@@ -20,10 +20,14 @@
   font-family: 'Inter', sans-serif;
 }
 body {
-  background: linear-gradient(135deg, var(--main-bg) 0%, #232946 100%);
   color: var(--text-main);
+  background-color: var(--main-bg);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='300' height='300' fill='%2323281E'/><ellipse cx='60' cy='60' rx='70' ry='40' fill='%233C4023'/><ellipse cx='220' cy='240' rx='60' ry='30' fill='%238B9A46'/><ellipse cx='220' cy='80' rx='85' ry='35' fill='%23A67C52'/><ellipse cx='80' cy='220' rx='50' ry='27' fill='%23B2B388'/></svg>");
+  background-repeat: repeat;
+  background-size: 340px 340px;
   line-height: 1.6;
   min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 .container {
   max-width: 1100px;
@@ -44,11 +48,30 @@ a:hover { color: var(--accent-alt); }
 /* Glassmorphism */
 .glass {
   background: var(--card-glass);
-  box-shadow: 0 8px 32px 0 rgba(10,25,47,0.18);
+  box-shadow: 0 8px 32px 0 rgba(36, 42, 27, 0.25);
   border-radius: 24px;
   border: 1.5px solid var(--border-glass);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  color: var(--accent-alt);
+}
+
+.section h2, .project-card h3, .timeline-content h3 {
+  color: var(--accent);
+}
+
+.btn, .contact-form button {
+  background: linear-gradient(90deg, var(--accent-alt) 0%, var(--accent) 100%);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background 0.23s;
+}
+
+.btn:hover, .contact-form button:hover {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-alt) 100%);
 }
 
 /* Navbar */
