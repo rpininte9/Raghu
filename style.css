@@ -416,3 +416,32 @@ body {
   text-align: right;
   font-weight: 600;
 }
+:root {
+  --bg: #fafafa;
+  --text: #181818;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  --bg: #181818;
+  --text: #fafafa;
+}
+body {
+  background: linear-gradient(-45deg, #7c3aed, #06b6d4, #fde68a, #a3e635);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0%, 100% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+}
+.tech-grid i {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tech-grid i:hover {
+  transform: scale(1.13) rotate(-4deg);
+  box-shadow: 0 8px 18px rgba(21,97,109,0.13);
+}
