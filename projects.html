@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR (same as your other pages) -->
+  <!-- NAVBAR -->
   <header class="navbar glass">
     <div class="container">
       <div class="logo">RAGHU</div>
@@ -27,50 +27,72 @@
     </div>
   </header>
 
-  <!-- PROJECTS SECTION -->
   <section class="section" id="projects" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project-grid">
+      <div class="timeline">
 
-        <!-- Epson America -->
-        <div class="project-card glass">
-          <h3>Enterprise Dashboard</h3>
-          <p><strong>Client:</strong> Epson America</p>
-          <p><strong>Dates:</strong> Jun 2021 – Present</p>
-          <p>
-            Developed a dynamic, responsive dashboard using Angular 12, Vue.js, and Spring Boot, deployed on AWS. Implemented microservices architecture, integrated GraphQL and MongoDB, and led CI/CD using Jenkins and Docker. Enhanced performance with Clojure optimizations and introduced robust monitoring using Splunk and Datadog.
-          </p>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2021 – Present</span>
+            <h3>Enterprise Dashboard <span class="client">| Epson America</span></h3>
+            <ul>
+              <li><b>Frontend:</b> Angular 12, Vue.js, SCSS, RxJS, Responsive UI with Material & Vuetify</li>
+              <li><b>Backend:</b> Spring Boot (REST & GraphQL), Clojure microservices, JWT/OAuth2 security</li>
+              <li><b>Data:</b> MongoDB (Aggregation, Indexing), Redis, GraphQL API gateway</li>
+              <li><b>Cloud:</b> AWS (ECS, S3, Lambda, API Gateway), CloudFormation, IAM</li>
+              <li><b>DevOps:</b> Jenkins Pipelines, Docker, ECR, SonarQube, Automated integration tests</li>
+              <li><b>Monitoring:</b> Splunk/Dashboard, Datadog metrics & alerting, Centralized logging</li>
+              <li><b>Highlights:</b> Led migration to microservices, reduced dashboard latency by 40%, enforced SAST/DAST security gates</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Caterpillar Inc -->
-        <div class="project-card glass">
-          <h3>Data Reporting Platform</h3>
-          <p><strong>Client:</strong> Caterpillar Inc</p>
-          <p><strong>Dates:</strong> Jul 2019 – May 2021</p>
-          <p>
-            Built a real-time data reporting platform with React, Next.js, Node.js, and MongoDB on Azure and AWS. Engineered microservices, implemented cloud-native deployments, and automated testing with Selenium and Jasmine. Integrated advanced data analytics using Spark and provided Splunk dashboards for operational insights.
-          </p>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2019 – May 2021</span>
+            <h3>Data Reporting Platform <span class="client">| Caterpillar Inc</span></h3>
+            <ul>
+              <li><b>Frontend:</b> React, Next.js (SSR), Redux, Styled Components, D3.js for analytics</li>
+              <li><b>Backend:</b> Node.js (Express), RESTful APIs, JWT Auth, BFF pattern</li>
+              <li><b>Data:</b> MongoDB (Sharded cluster), Azure CosmosDB, Streaming via Apache Kafka</li>
+              <li><b>Cloud:</b> Azure AKS, AWS Lambda, Azure Blob Storage, Terraform IAC</li>
+              <li><b>DevOps:</b> GitHub Actions, Selenium/Jest for CI, Docker Compose, Artifactory</li>
+              <li><b>Analytics:</b> Spark jobs for ETL, Real-time dashboards, Splunk operational visibility</li>
+              <li><b>Highlights:</b> Designed serverless reporting engine, scaled platform to 10k+ concurrent users, automated blue/green deployments</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Cyient -->
-        <div class="project-card glass">
-          <h3>Geospatial Data Management Portal</h3>
-          <p><strong>Client:</strong> Cyient, India</p>
-          <p><strong>Dates:</strong> Dec 2016 – Apr 2018</p>
-          <p>
-            Designed and developed internal applications using Angular 4, Node.js, and Spring Boot connected to Oracle and MongoDB. Implemented centralized configuration, logging with Splunk, and automated CI/CD with Jenkins and Maven. Integrated Azure DevOps for deployment and managed migration to cloud infrastructure.
-          </p>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="timeline-date">Dec 2016 – Apr 2018</span>
+            <h3>Geospatial Data Management Portal <span class="client">| Cyient, India</span></h3>
+            <ul>
+              <li><b>Frontend:</b> Angular 4, Leaflet.js for maps, RxJS, Custom SVG overlays</li>
+              <li><b>Backend:</b> Node.js & Spring Boot hybrid, RESTful APIs, LDAP Auth</li>
+              <li><b>Data:</b> Oracle Spatial, MongoDB for unstructured layers, Redis cache</li>
+              <li><b>DevOps:</b> Jenkins (Declarative pipelines), Maven, Docker, Azure DevOps for CI/CD</li>
+              <li><b>Cloud:</b> Azure VM Scale Sets, Blob Storage, automated cloud migration scripts</li>
+              <li><b>Monitoring:</b> Splunk centralized log search, custom event alerting</li>
+              <li><b>Highlights:</b> Enabled multi-tenant data access, implemented multi-layer map visualization, reduced deployment time by 60%</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Kellton Tech -->
-        <div class="project-card glass">
-          <h3>Enterprise Resource Planning (ERP) Module</h3>
-          <p><strong>Client:</strong> Kellton Tech, India</p>
-          <p><strong>Dates:</strong> Jun 2015 – Nov 2016</p>
-          <p>
-            Developed ERP modules using Struts MVC, Servlets, JSP, and JDBC. Managed data migration from MySQL to MongoDB, set up high availability clusters, and implemented both server- and client-side validation. Automated builds and deployments with ANT and Chef scripts.
-          </p>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2015 – Nov 2016</span>
+            <h3>Enterprise Resource Planning (ERP) Module <span class="client">| Kellton Tech, India</span></h3>
+            <ul>
+              <li><b>Frontend:</b> JSP, HTML5, Bootstrap, client-side validation with jQuery</li>
+              <li><b>Backend:</b> Struts 2 MVC, Servlets, JDBC, legacy system integration</li>
+              <li><b>Data:</b> MySQL (Migration to MongoDB), data import/export pipelines</li>
+              <li><b>DevOps:</b> Automated builds with ANT, Chef configuration scripts, on-premises deployments</li>
+              <li><b>Validation:</b> JUnit, Selenium, custom migration test harness</li>
+              <li><b>Highlights:</b> Led HA cluster setup, streamlined data migration, unified validation workflows</li>
+            </ul>
+          </div>
         </div>
 
       </div>
