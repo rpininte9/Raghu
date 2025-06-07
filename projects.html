@@ -6,11 +6,8 @@
   <title>Raghu | Projects</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
   <header class="navbar glass">
     <div class="container">
       <div class="logo">RAGHU</div>
@@ -27,81 +24,81 @@
     </div>
   </header>
 
-  <section class="section" id="projects" data-aos="fade-up">
+  <section class="section" id="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="timeline">
+      <div class="project-dossier">
 
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <span class="timeline-date">Jun 2021 – Present</span>
-            <h3>Enterprise Dashboard <span class="client">| Epson America</span></h3>
-            <ul>
-              <li><b>Frontend:</b> Angular 12, Vue.js, SCSS, RxJS, Responsive UI with Material & Vuetify</li>
-              <li><b>Backend:</b> Spring Boot (REST & GraphQL), Clojure microservices, JWT/OAuth2 security</li>
-              <li><b>Data:</b> MongoDB (Aggregation, Indexing), Redis, GraphQL API gateway</li>
-              <li><b>Cloud:</b> AWS (ECS, S3, Lambda, API Gateway), CloudFormation, IAM</li>
-              <li><b>DevOps:</b> Jenkins Pipelines, Docker, ECR, SonarQube, Automated integration tests</li>
-              <li><b>Monitoring:</b> Splunk/Dashboard, Datadog metrics & alerting, Centralized logging</li>
-              <li><b>Highlights:</b> Led migration to microservices, reduced dashboard latency by 40%, enforced SAST/DAST security gates</li>
-            </ul>
+        <article class="project-entry">
+          <h3>Enterprise Dashboard <span class="project-meta">| Epson America | Jun 2021 – Present</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> Angular 12, Vue.js, Material</span>
+            <span><b>Backend:</b> Spring Boot, Clojure, REST/GraphQL</span>
+            <span><b>Cloud/DevOps:</b> AWS (ECS, Lambda, S3), Docker, Jenkins, SonarQube</span>
+            <span><b>Data:</b> MongoDB, Redis</span>
+            <span><b>Monitoring:</b> Splunk, Datadog</span>
           </div>
-        </div>
+          <ul class="project-achievements">
+            <li>Re-architected monolith to microservices, improving scalability and resilience.</li>
+            <li>Reduced dashboard latency by 40% with GraphQL federation and MongoDB aggregation.</li>
+            <li>Set up end-to-end CI/CD: Jenkins pipelines, containerization, and automated integration tests.</li>
+            <li>Implemented centralized logging and proactive monitoring with Splunk and Datadog.</li>
+            <li>Enforced SAST/DAST security gates in the deployment pipeline.</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <span class="timeline-date">Jul 2019 – May 2021</span>
-            <h3>Data Reporting Platform <span class="client">| Caterpillar Inc</span></h3>
-            <ul>
-              <li><b>Frontend:</b> React, Next.js (SSR), Redux, Styled Components, D3.js for analytics</li>
-              <li><b>Backend:</b> Node.js (Express), RESTful APIs, JWT Auth, BFF pattern</li>
-              <li><b>Data:</b> MongoDB (Sharded cluster), Azure CosmosDB, Streaming via Apache Kafka</li>
-              <li><b>Cloud:</b> Azure AKS, AWS Lambda, Azure Blob Storage, Terraform IAC</li>
-              <li><b>DevOps:</b> GitHub Actions, Selenium/Jest for CI, Docker Compose, Artifactory</li>
-              <li><b>Analytics:</b> Spark jobs for ETL, Real-time dashboards, Splunk operational visibility</li>
-              <li><b>Highlights:</b> Designed serverless reporting engine, scaled platform to 10k+ concurrent users, automated blue/green deployments</li>
-            </ul>
+        <article class="project-entry">
+          <h3>Data Reporting Platform <span class="project-meta">| Caterpillar Inc | Jul 2019 – May 2021</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> React, Next.js (SSR), Redux, D3.js</span>
+            <span><b>Backend:</b> Node.js (Express), REST APIs, JWT Auth</span>
+            <span><b>Cloud/DevOps:</b> Azure AKS, AWS Lambda, Docker, Terraform, GitHub Actions</span>
+            <span><b>Data:</b> MongoDB (Sharded), CosmosDB, Kafka</span>
+            <span><b>Analytics:</b> Apache Spark, Splunk</span>
           </div>
-        </div>
+          <ul class="project-achievements">
+            <li>Designed a serverless, real-time reporting engine, scaling to 10k+ concurrent users.</li>
+            <li>Developed custom data visualizations and analytics dashboards using D3.js and Spark.</li>
+            <li>Automated blue/green deployments and infrastructure as code with Terraform.</li>
+            <li>Integrated automated testing (Selenium, Jest) into CI/CD pipelines.</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <span class="timeline-date">Dec 2016 – Apr 2018</span>
-            <h3>Geospatial Data Management Portal <span class="client">| Cyient, India</span></h3>
-            <ul>
-              <li><b>Frontend:</b> Angular 4, Leaflet.js for maps, RxJS, Custom SVG overlays</li>
-              <li><b>Backend:</b> Node.js & Spring Boot hybrid, RESTful APIs, LDAP Auth</li>
-              <li><b>Data:</b> Oracle Spatial, MongoDB for unstructured layers, Redis cache</li>
-              <li><b>DevOps:</b> Jenkins (Declarative pipelines), Maven, Docker, Azure DevOps for CI/CD</li>
-              <li><b>Cloud:</b> Azure VM Scale Sets, Blob Storage, automated cloud migration scripts</li>
-              <li><b>Monitoring:</b> Splunk centralized log search, custom event alerting</li>
-              <li><b>Highlights:</b> Enabled multi-tenant data access, implemented multi-layer map visualization, reduced deployment time by 60%</li>
-            </ul>
+        <article class="project-entry">
+          <h3>Geospatial Data Management Portal <span class="project-meta">| Cyient, India | Dec 2016 – Apr 2018</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> Angular 4, Leaflet.js, RxJS</span>
+            <span><b>Backend:</b> Node.js & Spring Boot, REST APIs, LDAP Auth</span>
+            <span><b>Cloud/DevOps:</b> Azure VMSS, Jenkins, Maven, Docker, Azure DevOps</span>
+            <span><b>Data:</b> Oracle Spatial, MongoDB, Redis</span>
+            <span><b>Monitoring:</b> Splunk</span>
           </div>
-        </div>
+          <ul class="project-achievements">
+            <li>Built multi-tenant GIS platform enabling dynamic map layer management.</li>
+            <li>Automated migration to Azure cloud, reducing deployment times by 60%.</li>
+            <li>Implemented centralized user authentication and RBAC with LDAP/OAuth2.</li>
+            <li>Integrated Splunk for real-time event log analysis and custom alerting.</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <span class="timeline-date">Jun 2015 – Nov 2016</span>
-            <h3>Enterprise Resource Planning (ERP) Module <span class="client">| Kellton Tech, India</span></h3>
-            <ul>
-              <li><b>Frontend:</b> JSP, HTML5, Bootstrap, client-side validation with jQuery</li>
-              <li><b>Backend:</b> Struts 2 MVC, Servlets, JDBC, legacy system integration</li>
-              <li><b>Data:</b> MySQL (Migration to MongoDB), data import/export pipelines</li>
-              <li><b>DevOps:</b> Automated builds with ANT, Chef configuration scripts, on-premises deployments</li>
-              <li><b>Validation:</b> JUnit, Selenium, custom migration test harness</li>
-              <li><b>Highlights:</b> Led HA cluster setup, streamlined data migration, unified validation workflows</li>
-            </ul>
+        <article class="project-entry">
+          <h3>ERP Module <span class="project-meta">| Kellton Tech, India | Jun 2015 – Nov 2016</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> JSP, HTML5, Bootstrap, jQuery</span>
+            <span><b>Backend:</b> Struts 2, Servlets, JDBC</span>
+            <span><b>DevOps:</b> ANT, Chef, on-prem deployments, Selenium</span>
+            <span><b>Data:</b> MySQL (migrated to MongoDB)</span>
           </div>
-        </div>
+          <ul class="project-achievements">
+            <li>Led data migration from MySQL to MongoDB, ensuring zero data loss.</li>
+            <li>Set up high-availability clusters and unified validation workflow (JUnit, Selenium).</li>
+            <li>Automated builds and deployments with ANT, Chef scripts.</li>
+            <li>Enhanced UI/UX with responsive layouts and client-side validation.</li>
+          </ul>
+        </article>
 
       </div>
     </div>
   </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
