@@ -530,3 +530,44 @@ li {
     right: auto;
   }
 }
+:root {
+  --main-bg: #23272F;          /* gunmetal / steel */
+  --card-glass: rgba(35, 39, 47, 0.90);
+  --surface: #31343A;          /* deep steel */
+  --accent: #3B82F6;           /* vivid steel blue */
+  --accent-alt: #9CA3AF;       /* silver */
+  --text-main: #F3F4F6;        /* off-white */
+  --text-secondary: #93C5FD;   /* pale steel */
+  --border-glass: rgba(59,130,246,0.18);
+  --danger: #B91C1C;
+  --heading: #0A2342;          /* NEW: Deep dark blue for headings */
+}
+
+/* Headings: dark blue, strong, uppercased */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading) !important;
+}
+
+/* All main/section/paragraph/list text: white */
+body,
+.section,
+.section p,
+.section li,
+.section ul,
+.section ol,
+.glass,
+.glass p,
+.glass li,
+.glass ul,
+.glass ol,
+.container,
+p,
+li,
+span {
+  color: #fff !important;
+}
+
+/* Optional: If you want nav links to always be white */
+.nav-links a {
+  color: #fff !important;
+}
