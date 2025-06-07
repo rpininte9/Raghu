@@ -151,3 +151,66 @@ li {
     font-size: 1.15em;
   }
 }
+/* --- Project Cards Styling --- */
+.project-dossier {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-entry {
+  background: rgba(24, 28, 19, 0.93);  /* dark olive, nearly opaque */
+  box-shadow: 0 4px 24px 0 rgba(35, 40, 30, 0.35);
+  border-radius: 20px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  border: 1.5px solid rgba(139,154,70,0.20);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.project-entry h3 {
+  color: #FFD700;      /* gold/khaki for standout headings */
+  font-size: 1.35em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.project-stack {
+  font-size: 1em;
+  font-weight: 600;
+  color: #F6F8E2;
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+}
+
+.project-stack b {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.project-achievements {
+  margin-left: 1.5em;
+  margin-bottom: 0;
+}
+.project-achievements li {
+  font-size: 1.08em;
+  line-height: 1.6;
+  margin-bottom: 0.4em;
+  color: #fff;
+  text-shadow: 2px 2px 8px #23281E, 0 0 2px #000;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .project-dossier {
+    gap: 1.2rem;
+  }
+  .project-entry {
+    padding: 1.1rem 0.7rem 1rem 0.7rem;
+    border-radius: 14px;
+  }
+}
