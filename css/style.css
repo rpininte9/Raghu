@@ -1,18 +1,15 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 :root {
-  --main-bg: #181D28;          /* midnight navy */
-  --card-glass: rgba(24,29,40,0.93);
-  --surface: #222738;          /* dark panel */
-  --accent: #C1121F;           /* strong crimson */
-  --accent-alt: #E5E5E5;       /* light silver */
-  --text-main: #F8F9FA;        /* bright white */
-  --text-secondary: #6C757D;   /* muted steel */
-  --border-glass: rgba(193,18,31,0.13);
-  --danger: #D7263D;
-}
+  --main-bg: #2D332A;          /* olive/army green */
+  --card-glass: rgba(45,51,42,0.92);
+  --surface: #353925;          /* dark olive */
+  --accent: #B6862C;           /* bronze */
+  --accent-alt: #F2B134;       /* gold-ochre */
+  --text-main: #F7FAF5;        /* warm off-white */
+  --text-secondary: #A7C957;   /* muted lime/green accent */
+  --border-glass: rgba(182,134,44,0.22);
+  --danger: #A93226;
 }
 .container { max-width: 1100px; margin: auto; padding: 2rem; }
 .glass {
