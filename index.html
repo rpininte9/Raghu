@@ -5,84 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raghu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container">
       <div class="logo">RAGHU</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#tools">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <h1>Hi, I am <span>Raghu</span></h1>
-        <p class="role">Java Full Stack Developer</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I am <span class="highlight">Raghu</span></h1>
+        <p class="subtitle">Java Full Stack Developer</p>
+
         <div class="social-icons">
-          <a href="#"><img src="https://cdn.simpleicons.org/github" alt="GitHub" /></a>
-          <a href="#"><img src="https://cdn.simpleicons.org/linkedin" alt="LinkedIn" /></a>
-          <a href="#"><img src="https://cdn.simpleicons.org/gmail" alt="Gmail" /></a>
+          <a href="#"><img src="https://cdn.simpleicons.org/github/000000" alt="GitHub" /></a>
+          <a href="#"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" /></a>
         </div>
-        <a href="#" class="btn">📄 Resume</a>
-      </div>
-    </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I’m Raghu, a Full Stack Java Developer with 9+ years of experience building enterprise applications with Spring Boot, Angular, and cloud technologies.</p>
+        <a href="Raghu_Resume.pdf" class="btn">📄 Resume</a>
       </div>
-    </section>
 
-    <section class="section" id="tools">
-      <div class="container">
-        <h2>Tools & Technologies</h2>
-        <div class="tech-grid">
-          <img src="https://cdn.simpleicons.org/java" alt="Java" />
-          <img src="https://cdn.simpleicons.org/react" alt="React" />
-          <img src="https://cdn.simpleicons.org/springboot" alt="Spring Boot" />
-          <img src="https://cdn.simpleicons.org/docker" alt="Docker" />
-          <img src="https://cdn.simpleicons.org/visualstudiocode" alt="VS Code" />
-          <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" />
-        </div>
+      <div class="hero-image">
+        <img src="https://undraw.co/api/illustrations/12d74496-8fc1-4f69-8e50-b35747f1b0a5" alt="Illustration" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
+  <!-- ABOUT -->
+  <section class="section light-bg" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm Raghu, a seasoned Full Stack Java Developer with over 9 years of experience in developing scalable web applications,
+        microservices, and enterprise software using Java, Spring Boot, Angular, AWS, and modern DevOps practices.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
           <h3>Enterprise Dashboard</h3>
-          <p>Built a real-time monitoring dashboard using Angular + Spring Boot, deployed to AWS with Jenkins pipelines.</p>
+          <p><strong>Client:</strong> Epson America</p>
+          <p>Angular + Spring Boot dashboard deployed on AWS with CI/CD pipeline via Jenkins & Docker.</p>
         </div>
-        <div class="project">
-          <h3>Reporting Platform</h3>
-          <p>Developed data visualizations in React, integrated with MongoDB, and deployed using Azure DevOps.</p>
+        <div class="project-card">
+          <h3>Data Reporting Platform</h3>
+          <p><strong>Client:</strong> Caterpillar Inc</p>
+          <p>Real-time platform built using React, MongoDB, Azure Pipelines & Kafka Streams.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+  <!-- TOOLS -->
+  <section class="section light-bg" id="tools">
+    <div class="container">
+      <h2>Tools & Technologies</h2>
+      <p>Technologies I use frequently:</p>
+      <div class="tech-grid">
+        <img src="https://cdn.simpleicons.org/java" alt="Java">
+        <img src="https://cdn.simpleicons.org/springboot" alt="Spring Boot">
+        <img src="https://cdn.simpleicons.org/angular" alt="Angular">
+        <img src="https://cdn.simpleicons.org/react" alt="React">
+        <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript">
+        <img src="https://cdn.simpleicons.org/html5" alt="HTML5">
+        <img src="https://cdn.simpleicons.org/css3" alt="CSS3">
+        <img src="https://cdn.simpleicons.org/docker" alt="Docker">
+        <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
+        <img src="https://cdn.simpleicons.org/amazonaws" alt="AWS">
+        <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB">
+        <img src="https://cdn.simpleicons.org/mysql" alt="MySQL">
+        <img src="https://cdn.simpleicons.org/git" alt="Git">
+        <img src="https://cdn.simpleicons.org/github" alt="GitHub">
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:you@email.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
 </body>
 </html>
