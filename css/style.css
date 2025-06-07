@@ -2,15 +2,15 @@
 
 /* Root color variables for a deep, masculine palette */
 :root {
-  --main-bg: #181D28;          /* midnight navy */
-  --card-glass: rgba(24,29,40,0.93);
-  --surface: #222738;          /* dark panel */
-  --accent: #C1121F;           /* strong crimson */
-  --accent-alt: #E5E5E5;       /* light silver */
-  --text-main: #F8F9FA;        /* bright white */
-  --text-secondary: #6C757D;   /* muted steel */
-  --border-glass: rgba(193,18,31,0.13);
-  --danger: #D7263D;
+  --main-bg: #23281E;           /* deep olive drab */
+  --card-glass: rgba(52, 62, 35, 0.92);
+  --surface: #3C4023;           /* darker olive */
+  --accent: #8B9A46;            /* moss green */
+  --accent-alt: #A67C52;        /* brown/bronze */
+  --text-main: #F6F8E2;         /* pale khaki */
+  --text-secondary: #B2B388;    /* light olive */
+  --border-glass: rgba(139,154,70,0.18);
+  --danger: #C1440E;            /* rusty red */
 }
 /* Base styles */
 * {
