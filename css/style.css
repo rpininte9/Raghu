@@ -529,3 +529,56 @@ li {
   .section h2 { font-size: 1.1rem; }
   .project-card { padding: 1.2rem; min-width: 90vw; max-width: 98vw; }
 }
+.tech-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem; /* adjust for icon spacing */
+  margin: 1.2rem 0 1.8rem 0;
+}
+
+.tech-icons-row img,
+.tech-icons-row svg {
+  height: 28px;
+  width: 28px;
+  display: block;
+  object-fit: contain;
+}
+
+.skills-section {
+  margin-top: 2.2rem;
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-family: 'Quicksand', 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  color: #46aaff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.skills-header::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 32px;
+  background: #b478ff;
+  border-radius: 5px;
+  margin-right: 0.7rem;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
