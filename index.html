@@ -9,37 +9,36 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    /* Increase icon size for tools */
+    /* Decrease icon size by half (original was 74px) */
     .tech-grid i {
-      font-size: 74px !important;
-      margin: 12px 10px;
+      font-size: 37px !important;
+      margin: 8px 6px;
     }
 
-    /* Skill bars in two rows */
+    /* Skills section: two columns, tighter rows */
     .skills-bars {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem 3rem;
       justify-content: center;
+      gap: 0;
     }
-    .skills-row {
+    .skills-col {
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem 3rem;
-      justify-content: center;
-      width: 100%;
+      flex-direction: column;
+      flex: 1 1 230px;
+      min-width: 220px;
+      max-width: 320px;
+      margin: 0 16px;
     }
     .skill-bar {
-      min-width: 220px;
-      flex: 1 1 300px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     .bar {
       width: 100%;
       background: #ececec;
       border-radius: 5px;
       height: 10px;
-      margin: 8px 0;
+      margin: 6px 0;
       overflow: hidden;
     }
     .bar-fill {
@@ -54,8 +53,8 @@
       margin-left: 5px;
     }
     @media (max-width: 900px) {
-      .skills-row { flex-direction: column; }
-      .skill-bar { min-width: unset; }
+      .skills-bars { flex-direction: column; align-items: center; }
+      .skills-col { max-width: unset; margin: 0; }
     }
   </style>
 </head>
@@ -212,7 +211,7 @@
 
       <h3 style="margin-top:2.5rem;">My Skill Levels</h3>
       <div class="skills-bars">
-        <div class="skills-row">
+        <div class="skills-col">
           <div class="skill-bar">
             <span>Java / J2EE</span>
             <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
@@ -254,7 +253,7 @@
             <span class="percent">88%</span>
           </div>
         </div>
-        <div class="skills-row">
+        <div class="skills-col">
           <div class="skill-bar">
             <span>NoSQL (MongoDB/DynamoDB)</span>
             <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
