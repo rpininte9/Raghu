@@ -332,3 +332,23 @@ body {
     text-align: left;
   }
 }
+.project-grid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  flex-wrap: nowrap;         /* Prevent wrapping */
+  margin-top: 2.5rem;
+  overflow-x: auto;          /* Allow horizontal scroll if needed */
+}
+.project-card {
+  flex: 0 0 320px;           /* Fixed width for each card */
+  max-width: 370px;
+  min-width: 260px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(21,97,109,0.13);
+  text-align: left;
+  border: 1.5px solid rgba(21,97,109,0.10);
+  transition: transform 0.22s, box-shadow 0.22s;
+}
