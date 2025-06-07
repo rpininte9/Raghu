@@ -1,0 +1,79 @@
+<section class="section" id="projects" data-aos="fade-up">
+  <div class="container">
+    <h2>Projects</h2>
+    <!-- Filter Buttons -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="aws">AWS</button>
+      <!-- Add more as needed -->
+    </div>
+    <!-- Project Cards -->
+    <div class="project-grid">
+      <!-- Example Project Card -->
+      <div class="project-card glass" data-category="java aws">
+        <img src="dashboard-thumb.jpg" alt="Enterprise Dashboard Screenshot" class="project-thumb"/>
+        <div class="project-content">
+          <h3>Enterprise Dashboard</h3>
+          <div class="project-badges">
+            <span class="badge">Angular</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">AWS</span>
+          </div>
+          <p>Dynamic, responsive dashboard for Epson America using Angular, Spring Boot, AWS Cloud, and microservices.</p>
+          <button class="project-more-btn" data-modal="modal1">Learn More</button>
+        </div>
+      </div>
+      <!-- More project cards... -->
+      <div class="project-card glass" data-category="react aws">
+        <img src="reporting-thumb.jpg" alt="Data Reporting Screenshot" class="project-thumb"/>
+        <div class="project-content">
+          <h3>Data Reporting Platform</h3>
+          <div class="project-badges">
+            <span class="badge">React</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Azure</span>
+          </div>
+          <p>Real-time data reporting for Caterpillar using React, Node.js, Azure, AWS, and Spark analytics.</p>
+          <button class="project-more-btn" data-modal="modal2">Learn More</button>
+        </div>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="project-modal" id="modal1">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Enterprise Dashboard</h3>
+      <img src="dashboard-large.jpg" alt="Dashboard Large Screenshot" style="width:100%;border-radius:10px;"/>
+      <p>
+        <strong>Client:</strong> Epson America<br>
+        <strong>Role:</strong> Sr. Java Full Stack Engineer<br>
+        Built a scalable dashboard with Angular 12, Vue.js, Spring Boot, AWS. Integrated GraphQL, MongoDB, CI/CD with Jenkins/Docker, and monitoring with Splunk/Datadog.
+      </p>
+      <div>
+        <a href="https://github.com/yourrepo" target="_blank" class="badge">GitHub</a>
+        <a href="#" target="_blank" class="badge">Live Demo</a>
+      </div>
+    </div>
+  </div>
+  <div class="project-modal" id="modal2">
+    <div class="project-modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Data Reporting Platform</h3>
+      <img src="reporting-large.jpg" alt="Reporting Large Screenshot" style="width:100%;border-radius:10px;"/>
+      <p>
+        <strong>Client:</strong> Caterpillar Inc<br>
+        <strong>Role:</strong> Full Stack Developer<br>
+        Built real-time data reporting with React, Next.js, Node.js, MongoDB, Azure, AWS. Automated testing, analytics, and deployments.
+      </p>
+      <div>
+        <a href="https://github.com/yourrepo2" target="_blank" class="badge">GitHub</a>
+        <a href="#" target="_blank" class="badge">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
