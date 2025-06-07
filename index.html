@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raghu | Projects</title>
+  <title>Raghu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,100 +13,125 @@
       <div class="logo">RAGHU</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="visual-resume.html">Visual Resume</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="index.html#tools">Tools</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="section" id="projects">
+  <section class="hero gradient-bg" id="home">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-table-container">
-        <table class="projects-table">
-          <thead>
-            <tr>
-              <th>Project</th>
-              <th>Client & Dates</th>
-              <th>Technical Stack</th>
-              <th>Main Achievements</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Enterprise Dashboard</strong></td>
-              <td>
-                <b>Epson America</b><br>
-                Jun 2021 – Present
-              </td>
-              <td>
-                <b>Frontend:</b> Angular 12, Vue.js, Material<br>
-                <b>Backend:</b> Spring Boot, Clojure, REST/GraphQL<br>
-                <b>Cloud:</b> AWS (ECS, Lambda), Docker<br>
-                <b>Data:</b> MongoDB, Redis<br>
-                <b>DevOps:</b> Jenkins, SonarQube, Splunk, Datadog
-              </td>
-              <td>
-                Migrated to microservices, reduced latency by 40%, implemented SAST/DAST security, centralized monitoring.
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Data Reporting Platform</strong></td>
-              <td>
-                <b>Caterpillar Inc</b><br>
-                Jul 2019 – May 2021
-              </td>
-              <td>
-                <b>Frontend:</b> React, Next.js, Redux, D3.js<br>
-                <b>Backend:</b> Node.js (Express), REST, JWT<br>
-                <b>Cloud:</b> Azure AKS, AWS Lambda<br>
-                <b>Data:</b> MongoDB, CosmosDB, Kafka<br>
-                <b>DevOps:</b> GitHub Actions, Selenium, Docker, Splunk
-              </td>
-              <td>
-                Built serverless reporting, handled 10k+ users, automated blue/green deployments, advanced analytics.
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Geospatial Data Management Portal</strong></td>
-              <td>
-                <b>Cyient, India</b><br>
-                Dec 2016 – Apr 2018
-              </td>
-              <td>
-                <b>Frontend:</b> Angular 4, Leaflet.js<br>
-                <b>Backend:</b> Node.js, Spring Boot, REST<br>
-                <b>Data:</b> Oracle Spatial, MongoDB, Redis<br>
-                <b>DevOps:</b> Jenkins, Maven, Docker, Azure DevOps
-              </td>
-              <td>
-                Multi-tenant access, map visualizations, cloud migration, deployment time reduced by 60%.
-              </td>
-            </tr>
-            <tr>
-              <td><strong>ERP Module</strong></td>
-              <td>
-                <b>Kellton Tech, India</b><br>
-                Jun 2015 – Nov 2016
-              </td>
-              <td>
-                <b>Frontend:</b> JSP, Bootstrap, jQuery<br>
-                <b>Backend:</b> Struts, Servlets, JDBC<br>
-                <b>Data:</b> MySQL, MongoDB<br>
-                <b>DevOps:</b> ANT, Chef, Selenium
-              </td>
-              <td>
-                Led HA cluster setup, streamlined migration, unified validation.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Raghu</span></h1>
+        <div class="subtitle">Sr. Full Stack Engineer • Cloud & DevOps Enthusiast • Problem Solver</div>
+        <p>
+          Passionate about architecting scalable web apps, automating infrastructure, and solving complex business problems with technology. Experienced across frontend, backend, and cloud.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/rpininte9" target="_blank" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+          </a>
+          <a href="https://linkedin.com/in/rpininte9" target="_blank" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"/>
+          </a>
+          <!-- Add more icons as needed -->
+        </div>
+        <a class="btn" href="Raghu_Resume.pdf" download>Download CV</a>
       </div>
+      <div class="hero-image pulse">
+        <img src="Developer.webp" alt="Raghu, Full Stack Developer">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Preview -->
+  <section class="section light-bg" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a results-oriented engineer with 8+ years of experience building enterprise applications, modernizing legacy systems, and leading cloud adoption. My toolkit covers Java, Spring Boot, Node.js, Angular, React, AWS, Azure, DevOps, and more.
+      </p>
+      <a class="btn" href="about.html">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Quick Projects Preview -->
+  <section class="section" id="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-dossier">
+        <article class="project-entry">
+          <h3>Enterprise Dashboard <span class="project-meta">| Epson America</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> Angular 12, Vue.js</span>
+            <span><b>Backend:</b> Spring Boot, Clojure</span>
+            <span><b>Cloud:</b> AWS, Docker</span>
+          </div>
+          <ul class="project-achievements">
+            <li>Re-architected monolith to microservices, improving scalability.</li>
+            <li>Reduced dashboard latency by 40% with GraphQL and MongoDB aggregation.</li>
+          </ul>
+        </article>
+        <article class="project-entry">
+          <h3>Data Reporting Platform <span class="project-meta">| Caterpillar Inc</span></h3>
+          <div class="project-stack">
+            <span><b>Frontend:</b> React, Next.js</span>
+            <span><b>Backend:</b> Node.js, REST</span>
+            <span><b>Data:</b> MongoDB, CosmosDB</span>
+          </div>
+          <ul class="project-achievements">
+            <li>Built serverless reporting for 10k+ users, automated blue/green deployments.</li>
+          </ul>
+        </article>
+      </div>
+      <a class="btn" href="projects.html">View All Projects</a>
+    </div>
+  </section>
+
+  <!-- Skills Preview -->
+  <section class="section light-bg" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="tech-grid">
+        <i class="devicon-java-plain-wordmark" title="Java"></i>
+        <i class="devicon-spring-plain-wordmark" title="Spring Boot"></i>
+        <i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
+        <i class="devicon-angular-plain-wordmark" title="Angular"></i>
+        <i class="devicon-react-original-wordmark" title="React"></i>
+        <i class="devicon-aws-plain-wordmark" title="AWS"></i>
+        <i class="devicon-docker-plain-wordmark" title="Docker"></i>
+        <i class="devicon-git-plain-wordmark" title="Git"></i>
+        <!-- Add more icons as needed -->
+      </div>
+      <a class="btn" href="skills.html">See My Skills</a>
+    </div>
+  </section>
+
+  <!-- Tools Preview -->
+  <section class="section" id="tools">
+    <div class="container">
+      <h2>Tools & Technologies</h2>
+      <p>
+        Proficient in a wide array of modern tools for development, automation, and cloud, including Docker, Jenkins, GitHub Actions, Terraform, and cloud-native services on AWS and Azure.
+      </p>
+      <a class="btn" href="tools.html">See All Tools</a>
+    </div>
+  </section>
+
+  <!-- Contact Preview -->
+  <section class="section light-bg" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Interested in working together or want to connect? Reach out to me for opportunities, collaborations, or just to say hi.
+      </p>
+      <a class="btn" href="contact.html">Contact Me</a>
     </div>
   </section>
 </body>
