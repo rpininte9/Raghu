@@ -2,67 +2,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
 :root {
-  --main-bg: #f5f7fa;           /* very light gray */
-  --surface: #ffffff;           /* white cards/sections */
-  --card-bg: #f3f6fa;           /* slightly off-white for cards */
-  --accent: #2563eb;            /* bold royal blue */
-  --accent-alt: #475569;        /* slate gray */
-  --heading: #181B20;           /* deep navy/black for headings */
-  --text-main: #23272f;         /* dark gray for body text */
-  --text-secondary: #475569;    /* slate for secondary text */
-  --border: #d1d5db;            /* light border gray */
-}
-
-/* Update main backgrounds */
-body {
-  background: var(--main-bg);
-  color: var(--text-main);
-}
-
-/* Section backgrounds */
-.section, .glass, .light-bg {
-  background: var(--surface);
-  color: var(--text-main);
-  box-shadow: 0 4px 24px rgba(24, 27, 32, 0.05);
-}
-
-/* Headings: strong and dark */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading);
-  text-shadow: none;
-}
-
-/* Paragraphs */
-.section p, .glass p {
-  color: var(--text-secondary);
-}
-
-/* Navbar */
-.navbar {
-  background: var(--surface);
-  border-bottom: 2px solid var(--accent);
-  box-shadow: 0 2px 14px 0 rgba(24,27,32,0.04);
-}
-
-/* Project cards */
-.project-card {
-  background: var(--card-bg);
-  color: var(--text-main);
-  border: 2.5px solid var(--border);
-  box-shadow: 0 4px 24px rgba(36, 63, 110, 0.08);
-}
-
-/* Buttons, links, accents remain royal blue */
-.btn,
-.nav-links a.active,
-.nav-links a:hover {
-  background: var(--accent);
-  color: #fff;
-}
-
-/* Subtle gradient for .gradient-bg */
-.gradient-bg {
-  background: linear-gradient(135deg, #e0e7ef 0%, #f5f7fa 100%);
+  --main-bg: #ECEEF1;         /* soft, very light graphite */
+  --surface: #F5F6F8;         /* light steel for cards/sections */
+  --card-bg: #F0F2F5;         /* card surface, slightly darker */
+  --accent: #2563eb;          /* bold royal blue */
+  --accent-alt: #293040;      /* steel gray for alt text */
+  --heading: #23272F;         /* very dark graphite for headings */
+  --text-main: #22262E;       /* dark gray for main text */
+  --text-secondary: #3B4252;  /* graphite for secondary text */
+  --border: #B0B8C1;
 }
 
 body {
@@ -80,25 +28,28 @@ body {
 .section {
   padding: 3rem 0;
   text-align: left;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(36, 63, 110, 0.07);
+  margin-bottom: 2.5rem;
 }
 
 .glass, .light-bg {
   background: var(--surface);
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(24, 27, 32, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(36, 63, 110, 0.07);
   padding: 2rem 2rem;
-  margin-bottom: 2.5rem;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #23262D 0%, #181B20 100%);
+  background: linear-gradient(135deg, #E0E6EF 0%, #ECEEF1 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading);
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0.7em;
 }
 
@@ -113,7 +64,7 @@ strong, b {
 
 .section p, .glass p {
   color: var(--text-secondary);
-  font-size: 1.14rem;
+  font-size: 1.15rem;
   margin-bottom: 0.8rem;
 }
 
@@ -132,9 +83,10 @@ li {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #20232a;
-  box-shadow: 0 2px 14px 0 rgba(24,27,32,0.19);
+  background: var(--surface);
+  box-shadow: 0 2px 14px 0 rgba(36,63,110,0.08);
   padding: 0.7rem 0;
+  border-bottom: 2px solid var(--accent);
 }
 
 .navbar .container {
@@ -150,7 +102,7 @@ li {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: var(--accent);
-  text-shadow: 0 2px 14px rgba(90,200,250,0.13);
+  text-shadow: 0 2px 14px #2563eb26;
   text-transform: uppercase;
   padding: 0.2rem 0.7rem;
 }
@@ -163,7 +115,7 @@ li {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--heading);
   font-weight: 700;
   padding: 0.3rem 1rem;
   border-radius: 6px;
@@ -175,13 +127,14 @@ li {
 .nav-links a.active,
 .nav-links a:hover {
   background: var(--accent);
-  color: #181E26;
+  color: #fff;
   border-radius: 8px;
 }
 
 /* Hero */
 .hero {
   padding: 5rem 0 3rem;
+  background: var(--surface);
 }
 
 .hero .container {
@@ -213,10 +166,11 @@ li {
 
 .subtitle {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: var(--accent);
   margin-bottom: 1.3rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .social-icons {
@@ -230,15 +184,15 @@ li {
 .social-icons img {
   height: 40px;
   border-radius: 6px;
-  background: #fff2;
+  background: #222a;
   padding: 6px;
-  box-shadow: 0 2px 8px rgba(90,200,250,0.12);
+  box-shadow: 0 2px 8px #2563eb22;
   transition: transform 0.24s, box-shadow 0.24s;
 }
 
 .social-icons img:hover {
   transform: scale(1.11) rotate(-2deg);
-  box-shadow: 0 8px 18px rgba(90,200,250,0.13);
+  box-shadow: 0 8px 18px #2563eb3a;
 }
 
 .btn {
@@ -246,13 +200,13 @@ li {
   margin-top: 1.4rem;
   padding: 0.9rem 2.4rem;
   background: var(--accent);
-  color: #181E26;
-  font-weight: 800;
+  color: #fff;
+  font-weight: 900;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.12rem;
   letter-spacing: 1.3px;
-  box-shadow: 0 4px 14px rgba(90,200,250,0.11);
+  box-shadow: 0 4px 14px #2563eb18;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s;
   border: none;
   text-transform: uppercase;
@@ -261,7 +215,8 @@ li {
 .btn:hover {
   background: #fff;
   color: var(--accent);
-  box-shadow: 0 8px 22px rgba(90,200,250,0.22);
+  box-shadow: 0 8px 22px #2563eb2a;
+  border: 2px solid var(--accent);
 }
 
 .hero-image {
@@ -275,8 +230,8 @@ li {
   width: 100%;
   max-width: 340px;
   border-radius: 22px;
-  box-shadow: 0 8px 32px rgba(90,200,250,0.10);
-  background: #23262d;
+  box-shadow: 0 8px 32px #2563eb23;
+  background: #e0e6ef;
 }
 
 @media (max-width: 900px) {
@@ -301,7 +256,7 @@ li {
 .tech-grid i:hover {
   transform: scale(1.18) rotate(-2deg);
   color: var(--accent);
-  box-shadow: 0 8px 18px rgba(90,200,250,0.09);
+  box-shadow: 0 8px 18px #2563eb22;
 }
 
 /* --- SKILLS BARS --- */
@@ -331,7 +286,7 @@ li {
   font-size: 1.09em;
   margin-right: 10px;
   color: var(--accent-alt);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
@@ -339,18 +294,18 @@ li {
 }
 .bar {
   flex: 1 0 90px;
-  background: #23262d;
+  background: #e0e6ef;
   border-radius: 7px;
   height: 16px;
   margin: 0 10px;
   overflow: hidden;
   min-width: 100px;
   max-width: 200px;
-  box-shadow: 0 1px 4px rgba(90,200,250,0.10);
+  box-shadow: 0 1px 4px #2563eb18;
   position: relative;
 }
 .bar-fill {
-  background: linear-gradient(90deg, var(--accent), #B0BEC5 100%);
+  background: linear-gradient(90deg, var(--accent), #3B4252 100%);
   height: 100%;
   border-radius: 7px 0 0 7px;
   transition: width 1s;
@@ -359,7 +314,7 @@ li {
   min-width: 38px;
   text-align: right;
   color: var(--accent);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.13em;
   letter-spacing: 0.01em;
 }
@@ -391,7 +346,7 @@ li {
   min-width: 300px;
   max-width: 370px;
   flex: 1 1 330px;
-  box-shadow: 0 4px 24px rgba(24,27,32,0.16);
+  box-shadow: 0 4px 24px rgba(36,63,110,0.08);
   text-align: left;
   border: 2.5px solid var(--border);
   transition: transform 0.17s, box-shadow 0.17s, border-color 0.17s;
@@ -400,13 +355,13 @@ li {
 }
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 40px rgba(90,200,250,0.15);
+  box-shadow: 0 12px 40px #2563eb22;
   border-color: var(--accent);
 }
 .project-card h3 {
   margin-bottom: 0.7rem;
   color: var(--accent);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.22rem;
   text-transform: uppercase;
 }
@@ -414,7 +369,7 @@ li {
   font-size: 0.99rem;
   color: var(--accent-alt);
   margin-bottom: 0.7em;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   flex-wrap: wrap;
   gap: 0.7em;
@@ -455,7 +410,7 @@ li {
   border-radius: 8px;
   font-size: 1.08rem;
   width: 100%;
-  background: #23262d;
+  background: #f3f6fa;
   color: var(--text-main);
   transition: border 0.24s;
 }
@@ -467,12 +422,12 @@ li {
   padding: 0.95rem;
   background: var(--accent);
   border: none;
-  color: #181E26;
+  color: #fff;
   font-weight: bold;
   border-radius: 8px;
   font-size: 1.08rem;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(90,200,250,0.08);
+  box-shadow: 0 4px 14px #2563eb18;
   transition: background 0.18s, box-shadow 0.18s, color 0.18s;
   align-self: flex-start;
   letter-spacing: 1.2px;
@@ -480,10 +435,11 @@ li {
 .contact-form button:hover {
   background: #fff;
   color: var(--accent);
-  box-shadow: 0 8px 20px rgba(90,200,250,0.13);
+  box-shadow: 0 8px 20px #2563eb2a;
+  border: 2px solid var(--accent);
 }
 
-/* --- Timeline Modern Steel/Blue --- */
+/* --- Timeline --- */
 .timeline {
   position: relative;
   margin: 2rem 0 2rem 0;
@@ -496,7 +452,7 @@ li {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(to bottom, #5AC8FA 0%, #232B36 100%);
+  background: linear-gradient(to bottom, var(--accent) 0%, #B0B8C1 100%);
   transform: translateX(-50%);
   border-radius: 2px;
 }
@@ -515,20 +471,20 @@ li {
   text-align: left;
 }
 .timeline-content {
-  background: var(--card-bg, #23262D);
+  background: var(--card-bg, #f3f6fa);
   border-radius: 14px;
   padding: 1.5rem 2rem;
-  box-shadow: 0 2px 10px rgba(90,200,250,0.15);
+  box-shadow: 0 2px 10px #2563eb0a;
   position: relative;
   display: inline-block;
   min-width: 220px;
   max-width: 480px;
   color: var(--text-main);
-  border: 1.5px solid #232B36;
+  border: 1.5px solid #B0B8C1;
 }
 .timeline-date {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent);
   margin-bottom: 0.5rem;
   font-size: 1.02em;
@@ -543,7 +499,7 @@ li {
   background: var(--accent);
   border-radius: 50%;
   border: 4px solid #fff;
-  box-shadow: 0 0 0 4px #23262D;
+  box-shadow: 0 0 0 4px #f3f6fa;
   z-index: 1;
 }
 .timeline-item.left:before {
@@ -556,7 +512,7 @@ li {
   margin-top: 0;
   margin-bottom: 0.7rem;
   color: var(--accent);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
