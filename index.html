@@ -3,216 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raghu | Portfolio</title>
+  <title>Raghu | Projects</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVBAR -->
   <header class="navbar glass">
     <div class="container">
       <div class="logo">RAGHU</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
           <li><a href="visual-resume.html">Visual Resume</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero gradient-bg" id="home" data-aos="fade-up">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Hi, I am <span class="highlight">Raghu</span></h1>
-        <p class="subtitle">Sr. Java Full Stack Engineer</p>
-        <div class="social-icons">
-          <a href="https://github.com/rpininte9" target="_blank" rel="noopener">
-            <img src="https://cdn.simpleicons.org/github/22223B" alt="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/raghuma-reddy/" target="_blank" rel="noopener">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="32" height="32"/>
-          </a>
-        </div>
-        <a href="Raghu_Resume.pdf" class="btn">📄 Resume</a>
-      </div>
-      <div class="hero-image pulse">
-        <img src="Developer.webp" alt="Developer at work" />
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-table-container">
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Client & Dates</th>
+              <th>Technical Stack</th>
+              <th>Main Achievements</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Enterprise Dashboard</strong></td>
+              <td>
+                <b>Epson America</b><br>
+                Jun 2021 – Present
+              </td>
+              <td>
+                <b>Frontend:</b> Angular 12, Vue.js, Material<br>
+                <b>Backend:</b> Spring Boot, Clojure, REST/GraphQL<br>
+                <b>Cloud:</b> AWS (ECS, Lambda), Docker<br>
+                <b>Data:</b> MongoDB, Redis<br>
+                <b>DevOps:</b> Jenkins, SonarQube, Splunk, Datadog
+              </td>
+              <td>
+                Migrated to microservices, reduced latency by 40%, implemented SAST/DAST security, centralized monitoring.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Data Reporting Platform</strong></td>
+              <td>
+                <b>Caterpillar Inc</b><br>
+                Jul 2019 – May 2021
+              </td>
+              <td>
+                <b>Frontend:</b> React, Next.js, Redux, D3.js<br>
+                <b>Backend:</b> Node.js (Express), REST, JWT<br>
+                <b>Cloud:</b> Azure AKS, AWS Lambda<br>
+                <b>Data:</b> MongoDB, CosmosDB, Kafka<br>
+                <b>DevOps:</b> GitHub Actions, Selenium, Docker, Splunk
+              </td>
+              <td>
+                Built serverless reporting, handled 10k+ users, automated blue/green deployments, advanced analytics.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Geospatial Data Management Portal</strong></td>
+              <td>
+                <b>Cyient, India</b><br>
+                Dec 2016 – Apr 2018
+              </td>
+              <td>
+                <b>Frontend:</b> Angular 4, Leaflet.js<br>
+                <b>Backend:</b> Node.js, Spring Boot, REST<br>
+                <b>Data:</b> Oracle Spatial, MongoDB, Redis<br>
+                <b>DevOps:</b> Jenkins, Maven, Docker, Azure DevOps
+              </td>
+              <td>
+                Multi-tenant access, map visualizations, cloud migration, deployment time reduced by 60%.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>ERP Module</strong></td>
+              <td>
+                <b>Kellton Tech, India</b><br>
+                Jun 2015 – Nov 2016
+              </td>
+              <td>
+                <b>Frontend:</b> JSP, Bootstrap, jQuery<br>
+                <b>Backend:</b> Struts, Servlets, JDBC<br>
+                <b>Data:</b> MySQL, MongoDB<br>
+                <b>DevOps:</b> ANT, Chef, Selenium
+              </td>
+              <td>
+                Led HA cluster setup, streamlined migration, unified validation.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
-
-  <!-- ABOUT -->
-  <section class="section glass light-bg" id="about" data-aos="fade-up">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm Raghu, a Senior Java Full Stack Engineer with 9+ years of experience in designing, developing, and deploying scalable web applications, microservices, and enterprise software. My expertise spans Java, Spring Boot, Angular, React, AWS, Azure, DevOps, and modern cloud solutions. I am passionate about building robust backend systems, seamless UIs, and automating everything from CI/CD pipelines to cloud infrastructure.
-      </p>
-    </div>
-  </section>
-
-  <!-- TOOLS & TECHNOLOGIES -->
-  <section class="section glass light-bg" id="tools" data-aos="fade-up">
-    <div class="container">
-      <h2>Tools & Technologies</h2>
-      <p>Technologies I use frequently:</p>
-      <div class="tech-grid">
-        <i class="devicon-java-plain colored" title="Java"></i>
-        <i class="devicon-spring-plain colored" title="Spring Boot"></i>
-        <i class="devicon-angularjs-plain colored" title="Angular"></i>
-        <i class="devicon-react-original colored" title="React"></i>
-        <i class="devicon-vuejs-plain colored" title="Vue.js"></i>
-        <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-        <i class="devicon-express-original colored" title="Express"></i>
-        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-        <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-        <i class="devicon-python-plain colored" title="Python"></i>
-        <i class="devicon-clojure-line colored" title="Clojure"></i>
-        <i class="devicon-docker-plain colored" title="Docker"></i>
-        <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
-        <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
-        <i class="devicon-azure-plain colored" title="Azure"></i>
-        <i class="devicon-googlecloud-plain colored" title="Google Cloud"></i>
-        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-        <i class="devicon-redis-plain colored" title="Redis"></i>
-        <i class="devicon-mysql-plain colored" title="MySQL"></i>
-        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-        <i class="devicon-oracle-original colored" title="Oracle"></i>
-        <i class="devicon-apachespark-original colored" title="Apache Spark"></i>
-        <i class="devicon-apachekafka-original colored" title="Apache Kafka"></i>
-        <i class="devicon-git-plain colored" title="Git"></i>
-        <i class="devicon-github-original" title="GitHub"></i>
-        <i class="devicon-gitlab-plain colored" title="GitLab"></i>
-        <i class="devicon-jenkins-plain colored" title="Jenkins"></i>
-        <i class="devicon-nginx-original colored" title="Nginx"></i>
-        <i class="devicon-apache-plain colored" title="Maven"></i>
-        <i class="devicon-selenium-original colored" title="Selenium"></i>
-        <i class="devicon-terraform-plain colored" title="Terraform"></i>
-        <i class="devicon-linux-plain colored" title="Linux"></i>
-        <i class="devicon-windows8-original colored" title="Windows"></i>
-        <i class="devicon-jira-plain colored" title="Jira"></i>
-        <i class="devicon-bash-plain colored" title="Bash"></i>
-        <i class="devicon-html5-plain colored" title="HTML5"></i>
-        <i class="devicon-css3-plain colored" title="CSS3"></i>
-        <i class="devicon-sass-original colored" title="SASS"></i>
-        <i class="devicon-redux-original colored" title="Redux"></i>
-        <i class="devicon-yarn-plain colored" title="Yarn"></i>
-        <i class="devicon-jest-plain colored" title="Jest"></i>
-      </div>
-
-      <h3 style="margin-top:2.5rem;">My Skill Levels</h3>
-<div class="skills-bars">
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">Java / J2EE</div>
-      <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
-      <span class="percent">98%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Spring Boot / Spring</div>
-      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-      <span class="percent">95%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Angular</div>
-      <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
-      <span class="percent">93%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">React / Vue.js</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">JavaScript / TypeScript</div>
-      <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
-      <span class="percent">92%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Node.js / Express.js</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Python</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">SQL (Oracle/MySQL/PostgreSQL)</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-  </div>
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">NoSQL (MongoDB/DynamoDB)</div>
-      <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
-      <span class="percent">83%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">AWS / Azure / GCP</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Docker / Kubernetes / OpenShift</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">CI/CD (Jenkins/GitHub Actions/Terraform)</div>
-      <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
-      <span class="percent">87%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Testing (JUnit/Selenium/Jest/PyTest)</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
-      <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
-      <span class="percent">82%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Linux / Windows</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-  </div>
-</div>
-
-  <!-- CONTACT -->
-  <section class="section glass" id="contact" data-aos="fade-up">
-    <div class="container">
-      <h2>Contact</h2>
-      <form class="contact-form" action="mailto:rpininte.09@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- AOS JS (after all content) -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
