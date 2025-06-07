@@ -105,6 +105,7 @@ body {
 .section {
   padding: 3rem 0;
   background-color: #f7f7f7;
+  text-align: center;
 }
 .section h2 {
   font-size: 2rem;
@@ -113,21 +114,26 @@ body {
 }
 .section p {
   max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Tech Grid */
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
 .tech-grid img {
   height: 40px;
+  width: auto;
   transition: transform 0.2s;
+  filter: grayscale(100%) contrast(1.2);
 }
 .tech-grid img:hover {
   transform: scale(1.2);
+  filter: grayscale(0%);
 }
 
 /* Projects */
@@ -135,7 +141,8 @@ body {
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  max-width: 700px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 .project h3 {
@@ -150,6 +157,8 @@ body {
   flex-direction: column;
   gap: 1rem;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-form input,
 .contact-form textarea {
@@ -157,6 +166,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
+  width: 100%;
 }
 .contact-form button {
   padding: 0.8rem;
