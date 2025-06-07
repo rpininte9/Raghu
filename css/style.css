@@ -2,15 +2,67 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
 :root {
-  --main-bg: #181E26;         /* deep navy */
-  --surface: #232B36;         /* slightly lighter navy */
-  --card-bg: #202531;         /* card surface */
-  --accent: #5AC8FA;          /* bright cyan/blue accent */
-  --accent-alt: #B0BEC5;      /* silver */
-  --heading: #C3D1E6;         /* soft silver-blue for headings */
-  --text-main: #F3F4F6;       /* off-white */
-  --text-secondary: #B0BEC5;  /* light steel */
-  --border: #2D3A4B;
+  --main-bg: #f5f7fa;           /* very light gray */
+  --surface: #ffffff;           /* white cards/sections */
+  --card-bg: #f3f6fa;           /* slightly off-white for cards */
+  --accent: #2563eb;            /* bold royal blue */
+  --accent-alt: #475569;        /* slate gray */
+  --heading: #181B20;           /* deep navy/black for headings */
+  --text-main: #23272f;         /* dark gray for body text */
+  --text-secondary: #475569;    /* slate for secondary text */
+  --border: #d1d5db;            /* light border gray */
+}
+
+/* Update main backgrounds */
+body {
+  background: var(--main-bg);
+  color: var(--text-main);
+}
+
+/* Section backgrounds */
+.section, .glass, .light-bg {
+  background: var(--surface);
+  color: var(--text-main);
+  box-shadow: 0 4px 24px rgba(24, 27, 32, 0.05);
+}
+
+/* Headings: strong and dark */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+  text-shadow: none;
+}
+
+/* Paragraphs */
+.section p, .glass p {
+  color: var(--text-secondary);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--surface);
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 2px 14px 0 rgba(24,27,32,0.04);
+}
+
+/* Project cards */
+.project-card {
+  background: var(--card-bg);
+  color: var(--text-main);
+  border: 2.5px solid var(--border);
+  box-shadow: 0 4px 24px rgba(36, 63, 110, 0.08);
+}
+
+/* Buttons, links, accents remain royal blue */
+.btn,
+.nav-links a.active,
+.nav-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Subtle gradient for .gradient-bg */
+.gradient-bg {
+  background: linear-gradient(135deg, #e0e7ef 0%, #f5f7fa 100%);
 }
 
 body {
