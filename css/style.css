@@ -2,17 +2,16 @@
 
 /* Root color variables for a deep, masculine palette */
 :root {
-  --main-bg: #0A192F;          /* deep navy */
-  --card-glass: rgba(23, 33, 49, 0.88);
-  --surface: #181F2A;          /* charcoal for cards */
-  --accent: #2563EB;           /* steel blue */
-  --accent-alt: #D97706;       /* bronze/gold accent */
-  --text-main: #F3F6FC;        /* near-white */
-  --text-secondary: #A7F3D0;   /* teal accent text */
-  --border-glass: rgba(37,99,235,0.22);
-  --danger: #e11d48;
+  --main-bg: #23272F;          /* gunmetal / steel */
+  --card-glass: rgba(35, 39, 47, 0.90);
+  --surface: #31343A;          /* deep steel */
+  --accent: #3B82F6;           /* vivid steel blue */
+  --accent-alt: #9CA3AF;       /* silver */
+  --text-main: #F3F4F6;        /* off-white */
+  --text-secondary: #93C5FD;   /* pale steel */
+  --border-glass: rgba(59,130,246,0.18);
+  --danger: #B91C1C;
 }
-
 /* Base styles */
 * {
   margin: 0;
