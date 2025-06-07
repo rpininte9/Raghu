@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raghu | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -18,8 +18,8 @@
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="pages/visual-resume.html">Visual Resume</a></li>
-          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="assets/pages/visual-resume.html">Visual Resume</a></li>
+          <li><a href="assets/pages/projects.html">Projects</a></li>
           <li><a href="#tools">Tools</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -44,7 +44,7 @@
         <a href="assets/pdf/Raghu_Resume.pdf" class="btn">📄 Resume</a>
       </div>
       <div class="hero-image pulse">
-        <img src="assests/images/Developer activity.gif" alt="Developer at work" />
+        <img src="assets/images/Developer activity.gif" alt="Developer at work" />
       </div>
     </div>
   </section>
@@ -65,6 +65,7 @@
       <h2>Tools & Technologies</h2>
       <p>Technologies I use frequently:</p>
       <div class="tech-grid">
+        <!-- devicon icons as before -->
         <i class="devicon-java-plain colored" title="Java"></i>
         <i class="devicon-spring-plain colored" title="Spring Boot"></i>
         <i class="devicon-angularjs-plain colored" title="Angular"></i>
@@ -109,92 +110,94 @@
       </div>
 
       <h3 style="margin-top:2.5rem;">My Skill Levels</h3>
-<div class="skills-bars">
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">Java / J2EE</div>
-      <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
-      <span class="percent">98%</span>
+      <div class="skills-bars">
+        <div class="skills-col">
+          <div class="skill-bar">
+            <div class="skill-label">Java / J2EE</div>
+            <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
+            <span class="percent">98%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Spring Boot / Spring</div>
+            <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+            <span class="percent">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Angular</div>
+            <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
+            <span class="percent">93%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">React / Vue.js</div>
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">JavaScript / TypeScript</div>
+            <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+            <span class="percent">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Node.js / Express.js</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Python</div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">SQL (Oracle/MySQL/PostgreSQL)</div>
+            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+            <span class="percent">88%</span>
+          </div>
+        </div>
+        <div class="skills-col">
+          <div class="skill-bar">
+            <div class="skill-label">NoSQL (MongoDB/DynamoDB)</div>
+            <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
+            <span class="percent">83%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">AWS / Azure / GCP</div>
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Docker / Kubernetes / OpenShift</div>
+            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+            <span class="percent">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">CI/CD (Jenkins/GitHub Actions/Terraform)</div>
+            <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
+            <span class="percent">87%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Testing (JUnit/Selenium/Jest/PyTest)</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
+            <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+            <span class="percent">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Linux / Windows</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="skill-bar">
-      <div class="skill-label">Spring Boot / Spring</div>
-      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-      <span class="percent">95%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Angular</div>
-      <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
-      <span class="percent">93%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">React / Vue.js</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">JavaScript / TypeScript</div>
-      <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
-      <span class="percent">92%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Node.js / Express.js</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Python</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">SQL (Oracle/MySQL/PostgreSQL)</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-  </div>
-  <div class="skills-col">
-    <div class="skill-bar">
-      <div class="skill-label">NoSQL (MongoDB/DynamoDB)</div>
-      <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
-      <span class="percent">83%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">AWS / Azure / GCP</div>
-      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      <span class="percent">90%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Docker / Kubernetes / OpenShift</div>
-      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
-      <span class="percent">88%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">CI/CD (Jenkins/GitHub Actions/Terraform)</div>
-      <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
-      <span class="percent">87%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Testing (JUnit/Selenium/Jest/PyTest)</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
-      <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
-      <span class="percent">82%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
-      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
-      <span class="percent">80%</span>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Linux / Windows</div>
-      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-      <span class="percent">85%</span>
-    </div>
-  </div>
-</div>
+  </section>
 
   <!-- CONTACT -->
   <section class="section glass" id="contact" data-aos="fade-up">
@@ -209,7 +212,6 @@
     </div>
   </section>
 
-  <!-- AOS JS (after all content) -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
