@@ -615,3 +615,22 @@ a:hover { color: var(--accent-alt); }
   .project-card { padding: 1.2rem; min-width: 90vw; max-width: 98vw; text-align: left; }
   .projects-table th, .projects-table td { font-size: 0.97em; padding: 0.7rem 0.4rem; }
 }
+body {
+  color: #fff !important;
+  text-shadow: 1px 1px 6px #23281e, 0 0 2px #000;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 24, 10, 0.68);
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F6F8E2 !important;
+  text-shadow: 1px 1px 8px #23281e;
+}
