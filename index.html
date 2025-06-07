@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raghu | Portfolio</title>
@@ -8,8 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <body>
   <!-- NAVBAR -->
+  <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
   <header class="navbar glass">
     <div class="container">
       <div class="logo">RAGHU</div>
@@ -26,6 +32,7 @@
   </header>
 
   <!-- HERO -->
+  <section data-aos="fade-up">
   <section class="hero gradient-bg" id="home">
     <div class="container hero-content">
       <div class="hero-text">
@@ -48,6 +55,7 @@
   </section>
 
   <!-- ABOUT -->
+    <section data-aos="fade-up">
   <section class="section glass light-bg" id="about">
     <div class="container">
       <h2>About Me</h2>
@@ -58,6 +66,7 @@
   </section>
 
   <!-- PROJECTS -->
+  <section data-aos="fade-up">
   <section class="section" id="projects">
     <div class="container">
       <h2>Projects</h2>
