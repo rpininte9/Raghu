@@ -89,8 +89,8 @@ li {
 }
 
 .navbar {
-  background: var(--surface);
-  border-bottom: 2.5px solid var(--accent1);
+  background: #23242a;
+  border-bottom: 2px solid #46aaff;
   box-shadow: 0 2px 18px 0 #46aaff10;
   padding: 0.8rem 0;
   position: sticky;
@@ -101,9 +101,56 @@ li {
 .navbar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Vertically centers logo and links */
+  min-height: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-family: 'Quicksand', 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+  color: #fff;
+  padding: 0.3rem 1.3rem;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #46aaff, #b478ff);
+  box-shadow: 0 2px 12px #46aaff33;
+  display: flex;
   align-items: center;
-  min-height: 50px;
-  padding: 0.2rem 0;
+  height: 54px;       /* Ensures consistent height with nav links */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;        /* Reduce from 3/4rem for tighter spacing */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #46aaff;
+  font-family: 'Quicksand', 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.16rem;
+  letter-spacing: 1.1px;
+  padding: 0.5rem 1.3rem;
+  border-radius: 12px;
+  transition: background 0.16s, color 0.16s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background: #46aaff;
+  color: #fff;
+  box-shadow: 0 2px 12px #46aaff33;
 }
 
 .logo {
