@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 :root {
-  --main-bg: #2D332A;          /* olive/army green */
-  --card-glass: rgba(45,51,42,0.92);
-  --surface: #353925;          /* dark olive */
-  --accent: #B6862C;           /* bronze */
-  --accent-alt: #F2B134;       /* gold-ochre */
-  --text-main: #F7FAF5;        /* warm off-white */
-  --text-secondary: #A7C957;   /* muted lime/green accent */
-  --border-glass: rgba(182,134,44,0.22);
-  --danger: #A93226;
+  --main-bg: #23281E;           /* deep olive drab */
+  --card-glass: rgba(52, 62, 35, 0.92);
+  --surface: #3C4023;           /* darker olive */
+  --accent: #8B9A46;            /* moss green */
+  --accent-alt: #A67C52;        /* brown/bronze */
+  --text-main: #F6F8E2;         /* pale khaki */
+  --text-secondary: #B2B388;    /* light olive */
+  --border-glass: rgba(139,154,70,0.18);
+  --danger: #C1440E;            /* rusty red */
 }
 .container { max-width: 1100px; margin: auto; padding: 2rem; }
 .glass {
