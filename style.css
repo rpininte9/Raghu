@@ -24,7 +24,7 @@ body {
 .navbar {
   background: #000;
   color: #fff;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 .navbar .container {
   display: flex;
@@ -35,36 +35,47 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: white;
 }
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .nav-links a {
-  color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  background: #fff;
-  color: #000;
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  background-color: transparent;
+  transition: background 0.3s;
+  font-weight: 500;
 }
-.nav-links a:hover {
-  background: #00e6b8;
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #00e6b8;
   color: #000;
 }
 
 /* Hero */
 .hero {
-  background-color: #fdfdfd;
-  padding: 4rem 0 2rem 0;
-  text-align: center;
+  background-color: #ffffff;
+  padding: 4rem 0 2rem;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
 }
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 .hero h1 span {
   color: #00e6b8;
@@ -72,19 +83,21 @@ body {
 .role {
   font-size: 1.2rem;
   color: #555;
+  margin-bottom: 1rem;
 }
 .social-icons {
   margin: 1rem 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .social-icons img {
-  height: 30px;
-  transition: transform 0.3s ease;
+  height: 40px;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 .social-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .btn {
   display: inline-block;
@@ -100,21 +113,33 @@ body {
 .btn:hover {
   background: #00cda4;
 }
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+}
 
 /* Section */
 .section {
   padding: 3rem 0;
-  background-color: #f7f7f7;
+  background-color: #eef6f6;
   text-align: center;
 }
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #111;
+  font-weight: 700;
 }
 .section p {
   max-width: 700px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 /* Tech Grid */
@@ -144,6 +169,7 @@ body {
   margin: 1rem auto;
   max-width: 700px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
 }
 .project h3 {
   margin-bottom: 0.5rem;
