@@ -556,3 +556,77 @@ body {
   .project-grid { flex-direction:column; align-items:center;}
   .project-card { width:96vw; }
 }
+/* TOOL ICONS GRID */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* or center for center alignment */
+  gap: 0 20px; /* horizontal spacing, less than before */
+  max-width: 1100px; /* adjust as needed */
+  margin: 0 auto 2.5rem auto;
+  padding-left: 8vw; /* helps balance left alignment if needed */
+}
+.tech-grid i {
+  font-size: 37px !important;
+  margin: 5px 10px; /* less space between icons */
+  vertical-align: middle;
+}
+
+/* SKILLS SECTION TWO COLUMNS, ALIGNED & TIGHTER */
+.skills-bars {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 350px;
+}
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* tighter */
+  min-height: 30px;
+}
+.skill-bar span:first-child {
+  flex: 0 0 56%;
+  text-align: left;
+  font-size: 1.08em;
+  margin-right: 10px;
+  color: #17445e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bar {
+  flex: 1 1 80px;
+  background: #ececec;
+  border-radius: 5px;
+  height: 10px;
+  margin: 0 8px;
+  overflow: hidden;
+  min-width: 80px;
+  max-width: 180px;
+}
+.bar-fill {
+  background: linear-gradient(90deg, #06b6d4, #7c3aed 80%);
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1s;
+}
+.percent {
+  min-width: 35px;
+  text-align: right;
+  color: #212d35;
+  font-weight: 600;
+  font-size: 1.03em;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 950px) {
+  .skills-bars { flex-direction: column; align-items: center; gap: 0; }
+  .skills-col { max-width: unset; min-width: unset; }
+}
