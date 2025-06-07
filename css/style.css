@@ -2,15 +2,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
 :root {
-  --main-bg: #23272F;          /* gunmetal / steel */
-  --card-glass: rgba(35, 39, 47, 0.90);
-  --surface: #31343A;          /* deep steel */
-  --accent: #3B82F6;           /* vivid steel blue */
-  --accent-alt: #9CA3AF;       /* silver */
-  --text-main: #F3F4F6;        /* off-white */
-  --text-secondary: #93C5FD;   /* pale steel */
-  --border-glass: rgba(59,130,246,0.18);
-  --danger: #B91C1C;
+  --main-bg: #181E26;         /* deep navy */
+  --surface: #232B36;         /* slightly lighter navy */
+  --card-bg: #202531;         /* card surface */
+  --accent: #5AC8FA;          /* bright cyan/blue accent */
+  --accent-alt: #B0BEC5;      /* silver */
+  --heading: #C3D1E6;         /* soft silver-blue for headings */
+  --text-main: #F3F4F6;       /* off-white */
+  --text-secondary: #B0BEC5;  /* light steel */
+  --border: #2D3A4B;
 }
 body {
   background: var(--main-bg);
