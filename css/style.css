@@ -10,15 +10,15 @@
   --bg-alt: #181820;
   --glass-bg: rgba(18, 18, 30, 0.96);
   --navbar-bg: #18181e;
-  --accent: #800020;      /* Burgundy */
-  --accent-dark: #2c1a1a; /* Deep burgundy */
-  --accent-light: #b22234;/* Lighter burgundy */
-  --highlight: #d4af37;   /* Gold */
+  --accent: #800020;
+  --accent-dark: #2c1a1a;
+  --accent-light: #b22234;
+  --highlight: #6b8e23;    /* Olive green */
   --border: #23242b;
   --text-main: #f2f2f5;
   --text-light: #b0b7c3;
-  --timeline-dot: #d4af37;
-  --timeline-line: linear-gradient(to bottom, #800020 10%, #d4af37 90%);
+  --timeline-dot: #6b8e23;
+  --timeline-line: linear-gradient(to bottom, #800020 10%, #6b8e23 90%);
   --table-header: #181820;
   --table-row-hover: #23242b;
   --card-bg: #181820;
