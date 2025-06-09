@@ -438,59 +438,95 @@ body {
   .skills-col { min-width: unset; max-width: unset; }
   .tech-grid i, .tech-grid img { font-size: 32px !important; height: 32px; width: 32px; }
 }
-/* Highlight client names and dates */
-.exp-client {
-  color: #ffba08; /* bold gold/yellow */
-  font-weight: 800;
-  font-size: 1.35em;
+/* Highlight client/company and dates in project entries */
+.project-entry h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #ffba08; /* gold */
   letter-spacing: 0.5px;
-  display: inline-block;
+}
+.project-entry h3 .client {
+  color: #ffba08;
+  font-weight: 900;
+  font-size: 1.18em;
+}
+.project-entry h3 .dates {
+  color: #ce8638;
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 0.5em;
 }
 
-.exp-dates {
-  color: #ce8638; /* burnt orange */
-  font-weight: 700;
-  font-size: 1.08em;
-  margin-left: 0.35em;
-  letter-spacing: 0.2px;
+/* Stack area: tech domain color coding */
+.project-stack span {
   display: inline-block;
+  margin: 0.15em 0.7em 0.15em 0;
+  font-size: 1.03em;
+}
+.project-stack b {
+  padding: 1px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-right: 4px;
+  font-size: 1em;
+}
+.project-stack b:after { content: ":"; margin-left: 2px; }
+
+.project-stack b {
+  background: rgba(128,128,128,0.07); /* fallback neutral for undefined */
+  color: #e0e0e0;
 }
 
-/* Section headers for tech areas */
-.exp-frontend {
-  color: #5cb85c; /* strong green */
-  font-weight: 700;
-  background: rgba(92,184,92,0.10);
-  padding: 1px 5px;
-  border-radius: 5px;
+/* Frontend: green */
+.project-stack b:contains('Frontend') {
+  background: rgba(92,184,92,0.15);
+  color: #49c357;
 }
-.exp-backend {
-  color: #c0392b; /* strong red */
-  font-weight: 700;
-  background: rgba(192,57,43,0.10);
-  padding: 1px 5px;
-  border-radius: 5px;
+/* Backend: red */
+.project-stack b:contains('Backend') {
+  background: rgba(192,57,43,0.15);
+  color: #e74c3c;
 }
-.exp-devops,
-.exp-clouddevops {
-  color: #2980b9; /* deep steel blue */
-  font-weight: 700;
-  background: rgba(41,128,185,0.10);
-  padding: 1px 5px;
-  border-radius: 5px;
+/* DevOps/Cloud/CloudDevOps: blue */
+.project-stack b:contains('DevOps'),
+.project-stack b:contains('Cloud/DevOps'),
+.project-stack b:contains('CloudDevOps'),
+.project-stack b:contains('Cloud') {
+  background: rgba(41,128,185,0.17);
+  color: #2980b9;
 }
-.exp-data {
-  color: #e67e22; /* orange */
-  font-weight: 700;
-  background: rgba(230,126,34,0.09);
-  padding: 1px 5px;
-  border-radius: 5px;
+/* Data: orange */
+.project-stack b:contains('Data') {
+  background: rgba(230,126,34,0.13);
+  color: #e67e22;
 }
-.exp-analytics,
-.exp-monitoring {
-  color: #9b59b6; /* purple */
-  font-weight: 700;
-  background: rgba(155,89,182,0.10);
-  padding: 1px 5px;
-  border-radius: 5px;
+/* Analytics/Monitoring: purple */
+.project-stack b:contains('Analytics'),
+.project-stack b:contains('Monitoring') {
+  background: rgba(155,89,182,0.12);
+  color: #9b59b6;
+}
+
+/* Project achievements */
+.project-achievements {
+  padding-left: 1.5em;
+  margin-top: 0.7em;
+  font-size: 1.05em;
+  color: #f3b562;
+}
+.project-achievements li {
+  margin-bottom: 0.45em;
+  line-height: 1.65;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .project-entry h3 {
+    font-size: 1.07rem;
+  }
+  .project-stack span {
+    display: block;
+    margin-bottom: 0.12em;
+  }
 }
