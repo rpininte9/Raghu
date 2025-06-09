@@ -1,251 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-:root {
-  --bg-main: #101014;          /* Black */
-  --bg-alt: #181820;           /* Very dark gray */
-  --glass-bg: rgba(18, 18, 30, 0.96);
-  --navbar-bg: #18181e;
-  --accent: #800020;           /* Burgundy */
-  --accent-dark: #2c1a1a;
-  --accent-light: #b22234;
-  --highlight: #49505a;        /* Slate gray */
-  --border: #23242b;
-  --text-main: #f2f2f5;
-  --text-light: #9ba1ab;
-  --timeline-dot: #49505a;
-  --timeline-line: linear-gradient(to bottom, #800020 10%, #49505a 90%);
-  --table-header: #181820;
-  --table-row-hover: #23242b;
-  --card-bg: #181820;
-}
-body {
-  background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
-  color: var(--text-main);
-  line-height: 1.6;
-  min-height: 100vh;
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2rem;
-}
-.glass {
-  background: var(--glass-bg);
-  box-shadow: 0 8px 32px 0 rgba(34,36,43,0.18);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 24px;
-  border: 1px solid var(--border);
-}
-.gradient-bg {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--navbar-bg) 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghu | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar glass">
+    <div class="container">
+      <div class="logo">RAGHU</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="pages/visual-resume.html">Visual Resume</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--navbar-bg);
-  color: var(--text-main);
-  padding: 0.7rem 0;
-  border-radius: 0 0 48px 48px;
-  box-shadow: 0 2px 12px 0 rgba(34,36,43,0.13);
-}
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 48px;
-  padding: 0.2rem 0;
-}
-.logo {
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  color: var(--accent);
-  text-shadow: 0 2px 12px rgba(34,36,43,0.05);
-  padding: 0.2rem 0.7rem;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2.5rem;
-  margin: 0;
-  padding: 0;
-}
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  padding: 0.2rem 0.9rem;
-  border-radius: 12px;
-  font-size: 1.15rem;
-  background-color: transparent;
-  transition: background 0.3s, color 0.3s;
-}
-.nav-links a:hover, .nav-links a.active {
-  background-color: var(--accent);
-  color: #f2f2f5;
-  border-radius: 18px;
-  transition: background 0.18s;
-}
+  <!-- HERO -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <!-- IMAGE ON LEFT -->
+      <div class="hero-image-block">
+        <div class="hero-image-card">
+          <img src="assests/images/Developer Me.png" alt="Full Stack Engineer Illustration" />
+        </div>
+      </div>
+      <!-- TEXT ON RIGHT -->
+      <div class="hero-text-block">
+        <div class="hero-title">Hi, I am <span class="highlight">Raghu</span></div>
+        <div class="hero-subtitle">Sr. Java Full Stack Engineer</div>
+        <div class="hero-socials">
+          <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <button class="hero-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22" fill="currentColor" style="margin-right:0.3em;">
+            <path d="M4 2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v10h10V4H4zm2 2h6v2H6V6zm0 3h6v2H6V9z"/>
+          </svg>
+          Resume
+        </button>
+      </div>
+    </div>
+  </section>
 
-.hero-section {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(120deg, #181820 0%, #800020 100%);
-  padding: 0 0 0 0;
-}
-.hero-content {
-  display: flex;
-  flex-direction: row; /* <-- image left, text right */
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  width: 100%;
-  gap: 4rem;
-  margin: 0 auto;
-}
+  <!-- ABOUT -->
+  <section class="section glass light-bg" id="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm Raghu, a Senior Java Full Stack Engineer with 9+ years of experience in designing, developing, and deploying scalable web applications, microservices, and enterprise software. My expertise spans Java, Spring Boot, Angular, React, AWS, Azure, DevOps, and modern cloud solutions. I am passionate about building robust backend systems, seamless UIs, and automating everything from CI/CD pipelines to cloud infrastructure.
+      </p>
+    </div>
+  </section>
 
-.hero-image-block {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-image-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border-radius: 32px;
-  box-shadow: 0 8px 40px 0 var(--border);
-  padding: 2em 2em 1.5em 2em;
-  max-width: 430px;
-  max-height: 430px;
-  margin: 0 auto;
-}
-.hero-image-card img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 330px;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 2px 22px #0002;
-}
+  <!-- TOOLS & TECHNOLOGIES -->
+  <section class="section glass light-bg" id="tools" data-aos="fade-up">
+    <div class="container">
+      <h2>Tools & Technologies</h2>
+      <p>Technologies I use frequently:</p>
+      <div class="tech-grid">
+        <i class="devicon-java-plain colored" title="Java"></i>
+        <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+        <i class="devicon-angularjs-plain colored" title="Angular"></i>
+        <i class="devicon-react-original colored" title="React"></i>
+        <i class="devicon-vuejs-plain colored" title="Vue.js"></i>
+        <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+        <i class="devicon-express-original colored" title="Express"></i>
+        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+        <i class="devicon-typescript-plain colored" title="TypeScript"></i>
+        <i class="devicon-python-plain colored" title="Python"></i>
+        <i class="devicon-clojure-line colored" title="Clojure"></i>
+        <i class="devicon-docker-plain colored" title="Docker"></i>
+        <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
+        <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
+        <i class="devicon-azure-plain colored" title="Azure"></i>
+        <i class="devicon-googlecloud-plain colored" title="Google Cloud"></i>
+        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+        <i class="devicon-redis-plain colored" title="Redis"></i>
+        <i class="devicon-mysql-plain colored" title="MySQL"></i>
+        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+        <i class="devicon-oracle-original colored" title="Oracle"></i>
+        <i class="devicon-apachespark-original colored" title="Apache Spark"></i>
+        <i class="devicon-apachekafka-original colored" title="Apache Kafka"></i>
+        <i class="devicon-git-plain colored" title="Git"></i>
+        <i class="devicon-github-original" title="GitHub"></i>
+        <i class="devicon-gitlab-plain colored" title="GitLab"></i>
+        <i class="devicon-jenkins-plain colored" title="Jenkins"></i>
+        <i class="devicon-nginx-original colored" title="Nginx"></i>
+        <i class="devicon-apache-plain colored" title="Maven"></i>
+        <i class="devicon-selenium-original colored" title="Selenium"></i>
+        <i class="devicon-terraform-plain colored" title="Terraform"></i>
+        <i class="devicon-linux-plain colored" title="Linux"></i>
+        <i class="devicon-windows8-original colored" title="Windows"></i>
+        <i class="devicon-jira-plain colored" title="Jira"></i>
+        <i class="devicon-bash-plain colored" title="Bash"></i>
+        <i class="devicon-html5-plain colored" title="HTML5"></i>
+        <i class="devicon-css3-plain colored" title="CSS3"></i>
+        <i class="devicon-sass-original colored" title="SASS"></i>
+        <i class="devicon-redux-original colored" title="Redux"></i>
+        <i class="devicon-yarn-plain colored" title="Yarn"></i>
+        <i class="devicon-jest-plain colored" title="Jest"></i>
+      </div>
+      <h3 style="margin-top:2.5rem;">My Skill Levels</h3>
+      <div class="skills-bars">
+        <div class="skills-col">
+          <div class="skill-bar">
+            <div class="skill-label">Java / J2EE</div>
+            <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
+            <span class="percent">98%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Spring Boot / Spring</div>
+            <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+            <span class="percent">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Angular</div>
+            <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
+            <span class="percent">93%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">React / Vue.js</div>
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">JavaScript / TypeScript</div>
+            <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+            <span class="percent">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Node.js / Express.js</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Python</div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">SQL (Oracle/MySQL/PostgreSQL)</div>
+            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+            <span class="percent">88%</span>
+          </div>
+        </div>
+        <div class="skills-col">
+          <div class="skill-bar">
+            <div class="skill-label">NoSQL (MongoDB/DynamoDB)</div>
+            <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
+            <span class="percent">83%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">AWS / Azure / GCP</div>
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Docker / Kubernetes / OpenShift</div>
+            <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+            <span class="percent">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">CI/CD (Jenkins/GitHub Actions/Terraform)</div>
+            <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
+            <span class="percent">87%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Testing (JUnit/Selenium/Jest/PyTest)</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
+            <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+            <span class="percent">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Linux / Windows</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTACT -->
+  <section class="section glass" id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:rpininte.09@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-.hero-text-block {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 3vw;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #f2f2f5;
-  margin-bottom: 0.3em;
-  letter-spacing: 1.5px;
-}
-.hero-title .highlight {
-  color: var(--accent);
-  font-weight: 800;
-}
-.hero-subtitle {
-  font-size: 1.45rem;
-  color: var(--accent-light);
-  margin-bottom: 1.6em;
-  letter-spacing: 1px;
-}
-.hero-socials {
-  display: flex;
-  gap: 1.1em;
-  margin-bottom: 2.2em;
-}
-.hero-socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--navbar-bg);
-  border-radius: 1em;
-  width: 54px;
-  height: 54px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-size: 2rem;
-  text-decoration: none;
-  outline: none;
-}
-.hero-socials a:hover {
-  transform: scale(1.13);
-  box-shadow: 0 6px 16px var(--highlight);
-}
-.hero-socials i {
-  color: var(--highlight);
-  transition: color 0.2s;
-}
-.hero-socials i:hover {
-  color: var(--accent-dark);
-}
-
-.hero-btn {
-  background: linear-gradient(90deg, var(--highlight) 10%, var(--accent) 100%);
-  color: #faf8fa;
-  font-size: 1.45rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 16px;
-  padding: 1.1em 2.9em;
-  margin-top: 1.2em;
-  box-shadow: 0 6px 26px 0 var(--highlight);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7em;
-  cursor: pointer;
-  transition: background 0.22s, color 0.22s, box-shadow 0.22s;
-}
-.hero-btn:hover {
-  background: linear-gradient(90deg, var(--accent) 10%, var(--highlight) 100%);
-  color: #f2f2f5;
-  box-shadow: 0 10px 40px var(--highlight);
-}
-.hero-btn svg {
-  font-size: 1.2em;
-}
-
-@media (max-width: 950px) {
-  .hero-content {
-    flex-direction: column;
-    gap: 2.5rem;
-    text-align: center;
-  }
-  .hero-text-block, .hero-image-block {
-    flex: none;
-    padding: 0;
-    max-width: unset;
-  }
-  .hero-image-card {
-    margin-bottom: 0;
-  }
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  .hero-btn {
-    font-size: 1.1rem;
-    padding: 0.8em 2em;
-  }
-}
-
-/* ... (rest of your existing CSS remains unchanged) ... */
+  <!-- AOS JS (after all content) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
