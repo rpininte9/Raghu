@@ -438,3 +438,59 @@ body {
   .skills-col { min-width: unset; max-width: unset; }
   .tech-grid i, .tech-grid img { font-size: 32px !important; height: 32px; width: 32px; }
 }
+/* Highlight client names and dates */
+.exp-client {
+  color: #ffba08; /* bold gold/yellow */
+  font-weight: 800;
+  font-size: 1.35em;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.exp-dates {
+  color: #ce8638; /* burnt orange */
+  font-weight: 700;
+  font-size: 1.08em;
+  margin-left: 0.35em;
+  letter-spacing: 0.2px;
+  display: inline-block;
+}
+
+/* Section headers for tech areas */
+.exp-frontend {
+  color: #5cb85c; /* strong green */
+  font-weight: 700;
+  background: rgba(92,184,92,0.10);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.exp-backend {
+  color: #c0392b; /* strong red */
+  font-weight: 700;
+  background: rgba(192,57,43,0.10);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.exp-devops,
+.exp-clouddevops {
+  color: #2980b9; /* deep steel blue */
+  font-weight: 700;
+  background: rgba(41,128,185,0.10);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.exp-data {
+  color: #e67e22; /* orange */
+  font-weight: 700;
+  background: rgba(230,126,34,0.09);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.exp-analytics,
+.exp-monitoring {
+  color: #9b59b6; /* purple */
+  font-weight: 700;
+  background: rgba(155,89,182,0.10);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
