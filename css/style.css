@@ -7,24 +7,23 @@
 }
 
 :root {
-  --bg-main: #101014;              /* Jet black */
-  --bg-alt: #181820;               /* Deep black/gray */
-  --glass-bg: rgba(18, 18, 30, 0.96); /* Gunmetal glass effect */
-  --navbar-bg: #18181e;            /* Black/navy */
-  --accent: #800020;               /* Burgundy */
-  --accent-dark: #2c1a1a;          /* Very deep burgundy/oxblood */
-  --accent-light: #a83232;         /* Muted strong red */
-  --highlight: #3d4655;            /* Gunmetal blue/gray */
-  --border: #23242b;               /* Subtle border */
-  --text-main: #f2f2f5;            /* Near white */
-  --text-light: #878b93;           /* Cool gray */
-  --timeline-dot: #3d4655;
-  --timeline-line: linear-gradient(to bottom, #800020 10%, #3d4655 90%);
-  --table-header: #181820;
+  --bg-main: #101014;
+  --bg-alt: #181a14;
+  --glass-bg: rgba(16, 18, 10, 0.97);
+  --navbar-bg: #1b2114;
+  --accent: #364d2a;         /* Olive */
+  --accent-dark: #232e1d;    /* Deep olive */
+  --accent-light: #8c7a39;   /* Brass gold */
+  --highlight: #c8b26e;      /* Light brass */
+  --border: #23242b;
+  --text-main: #f2f2e7;
+  --text-light: #a8ad9d;
+  --timeline-dot: #c8b26e;
+  --timeline-line: linear-gradient(to bottom, #364d2a, #c8b26e 90%);
+  --table-header: #181a14;
   --table-row-hover: #23242b;
-  --card-bg: #181820;
+  --card-bg: #181a14;
 }
-
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
   color: var(--text-main);
