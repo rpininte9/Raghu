@@ -157,7 +157,7 @@ body {
   justify-content: center;
 }
 .hero-image-card {
-  background: #fff;
+  background: transparent; /* or use a theme color or gradient */
   border-radius: 32px;
   box-shadow: 0 8px 40px 0 #23242b33;
   padding: 2em 2em 1.5em 2em;
