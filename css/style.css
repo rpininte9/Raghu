@@ -2,24 +2,23 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
 :root {
-  --bg-main: #16181d;
-  --bg-alt: #23242b;
-  --glass-bg: rgba(34,36,43,0.97);
-  --navbar-bg: #181a1f;
-  --accent: #ce8638;         /* Burnt orange/gold */
-  --accent-dark: #b75c15;    /* Deeper burnt orange */
-  --accent-light: #f3b562;   /* Light gold */
-  --highlight: #ffba08;      /* Bold bright gold */
-  --border: #23242b;
+  --bg-main: #16211d;
+  --bg-alt: #253127;
+  --glass-bg: rgba(37,49,39,0.97);
+  --navbar-bg: #1b2a21;
+  --accent: #228b22;         /* Forest Green */
+  --accent-dark: #1a5522;    /* Deeper Forest */
+  --accent-light: #b7410e;   /* Rust */
+  --highlight: #ffba08;      /* Gold */
+  --border: #253127;
   --text-main: #f6f8fa;
   --text-light: #b0b7c3;
   --timeline-dot: #ffba08;
-  --timeline-line: linear-gradient(to bottom, #ce8638, #ffba08 90%);
-  --table-header: #23242b;
-  --table-row-hover: #23242b;
-  --card-bg: #23242b;
+  --timeline-line: linear-gradient(to bottom, #228b22, #ffba08 90%);
+  --table-header: #253127;
+  --table-row-hover: #253127;
+  --card-bg: #253127;
 }
-
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
   color: var(--text-main);
