@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
-
- :root {
-  --accent: #22314D;         /* Navy */
-  --accent-dark: #15355C;    /* Deeper Navy */
-  --accent-light: #C28840;   /* Bronze */
-  --highlight: #FFD700;      /* Gold */
-  /* ...rest unchanged */
+:root {
+  --bg-main: #16181d;
+  --bg-alt: #23242b;
+  --glass-bg: rgba(34,36,43,0.97);
+  --navbar-bg: #181a1f;
+  --accent: #ce8638;         /* Burnt orange/gold */
+  --accent-dark: #b75c15;    /* Deeper burnt orange */
+  --accent-light: #f3b562;   /* Light gold */
+  --highlight: #ffba08;      /* Bold bright gold */
+  --border: #23242b;
+  --text-main: #f6f8fa;
+  --text-light: #b0b7c3;
+  --timeline-dot: #ffba08;
+  --timeline-line: linear-gradient(to bottom, #ce8638, #ffba08 90%);
+  --table-header: #23242b;
+  --table-row-hover: #23242b;
+  --card-bg: #23242b;
 }
 
 body {
@@ -230,7 +240,7 @@ body {
 }
 .bar {
   flex: 4;
-  background: #23242b;
+  background: #8d92b4;
   border-radius: 7px;
   height: 20px;
   margin: 0 10px;
@@ -574,17 +584,17 @@ body {
 .project-stack b:after { content: ":"; margin-left: 2px; }
 
 .project-stack .frontend {
-  color: #35d07f;       /* Vibrant green */
+  color: #cea931;       /* Vibrant green */
   font-weight: 700;
 }
 .project-stack .backend {
-  color: #e74c3c;       /* Bold red */
+  color: #cea931;;       /* Bold red */
   font-weight: 700;
 }
 .project-stack .devops,
 .project-stack .clouddevops,
 .project-stack .cloud {
-  color: #2980b9;       /* Deep blue */
+  color: #ffffff;       /* Deep blue */
   font-weight: 700;
 }
 .project-stack .data {
