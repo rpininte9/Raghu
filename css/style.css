@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 body {
-  background: linear-gradient(135deg, #f6f5f2 0%, #415a77 100%);
-color: #22223b;
-.navbar { background: #1b263b; }
-.logo { color: #ffd700; }
-.btn, .nav-links a.active, .nav-links a:hover { background: #ffd700; color: #0d1b2a; }
-.section h2, .project-card h3 { color: #0d1b2a; }
+  background: linear-gradient(135deg, #e9f5f2 0%, #94d2bd 100%);
+color: #001219;
+.navbar { background: #005f73; }
+.logo { color: #ee9b00; }
+.btn, .nav-links a.active, .nav-links a:hover { background: #ee9b00; }
+.section h2, .project-card h3 { color: #0a9396; }
 }
 .container { max-width: 1100px; margin: auto; padding: 2rem; }
 .glass {
