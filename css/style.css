@@ -438,7 +438,6 @@ body {
   .skills-col { min-width: unset; max-width: unset; }
   .tech-grid i, .tech-grid img { font-size: 32px !important; height: 32px; width: 32px; }
 }
-/* Inverted highlight colors for project sections */
 
 /* CLIENT/COMPANY NAME and DATES */
 .project-entry h3 {
@@ -513,14 +512,11 @@ body {
 
 /* RESPONSIBILITIES/ACHIEVEMENTS: INVERTED */
 .project-achievements {
-  padding-left: 1.5em;
-  margin-top: 0.7em;
-  font-size: 1.05em;
-  color: #181a1f;
-  background: #f3b562;
-  border-radius: 8px;
-  padding-top: 0.8em;
-  padding-bottom: 0.6em;
+  background: none !important;
+  color: #f6f8fa !important;  /* Restore default text color */
+  border-radius: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .project-achievements li {
   margin-bottom: 0.45em;
