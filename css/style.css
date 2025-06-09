@@ -102,24 +102,24 @@ body {
 
 /* --- TOOLS GRID --- */
 .tech-grid {
-  display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 0 18px; margin-top: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto; align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0 10px;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.tech-grid i, .tech-grid img {
-  font-size: 44px !important;
-  height: 44px; width: 44px;
-  margin: 0 3px;
+.tech-grid i {
+  font-size: 37px !important;
+  margin: 5px 6px;
   vertical-align: middle;
   transition: transform 0.22s, box-shadow 0.22s;
-  color: var(--accent-light);
-  background: #181b22;
-  padding: 7px 8px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(206,134,56,0.10);
 }
-.tech-grid i:hover, .tech-grid img:hover {
-  transform: scale(1.14) rotate(-6deg);
-  color: var(--highlight);
-  background: #23242b;
+.tech-grid i:hover {
+  transform: scale(1.13) rotate(-4deg);
+  box-shadow: 0 8px 18px rgba(21,97,109,0.13);
 }
 
 /* --- SKILLS BARS --- */
