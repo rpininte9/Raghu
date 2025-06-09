@@ -8,13 +8,13 @@
   --navbar-bg: #181a1f;
   --accent: #800020;         /* Burgundy */
   --accent-dark: #5a0015;    /* Deep Burgundy */
-  --accent-light: #ffd700;   /* Gold */
+  --accent-light: #751408;   /* Gold */
   --highlight: #c28840;      /* Bronze */
   --border: #23242b;
   --text-main: #f6f8fa;
   --text-light: #b0b7c3;
   --timeline-dot: #c28840;
-  --timeline-line: linear-gradient(to bottom, #800020, #c28840 90%);
+  --timeline-line: linear-gradient(to bottom, #800020, #cc7d16 90%);
   --table-header: #23242b;
   --table-row-hover: #23242b;
   --card-bg: #23242b;
@@ -69,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #23242b 0%, #8f6a13 100%);
+  background: linear-gradient(120deg, #23242b 0%, #64100d 100%);
   padding: 0 0 0 0;
 }
 .hero-content {
@@ -95,12 +95,12 @@ body {
   letter-spacing: 1.5px;
 }
 .hero-title .highlight {
-  color: #ffba08;
+  color: #751408;
   font-weight: 800;
 }
 .hero-subtitle {
   font-size: 1.45rem;
-  color: #e7c98b;
+  color: #751408;
   margin-bottom: 1.6em;
   letter-spacing: 1px;
 }
@@ -126,7 +126,7 @@ body {
   box-shadow: 0 6px 16px #ffba0877;
 }
 .hero-btn {
-  background: linear-gradient(90deg, #ffba08 10%, #e7c98b 100%);
+  background: linear-gradient(90deg, #751408 10%, #66190f 100%);
   color: #181a1f;
   font-size: 1.45rem;
   font-weight: 700;
