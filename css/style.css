@@ -7,21 +7,21 @@
 }
 :root {
   --bg-main: #101014;
-  --bg-alt: #181a14;
-  --glass-bg: rgba(16, 18, 10, 0.97);
-  --navbar-bg: #181a14;
-  --accent: #556B2F;        /* Army green */
-  --accent-dark: #364422;   /* Deeper green */
-  --accent-light: #B3A369;  /* Brass */
-  --highlight: #FFD700;     /* Gold */
+  --bg-alt: #181820;
+  --glass-bg: rgba(18, 18, 30, 0.96);
+  --navbar-bg: #18181e;
+  --accent: #800020;      /* Burgundy */
+  --accent-dark: #2c1a1a; /* Deep burgundy */
+  --accent-light: #b22234;/* Lighter burgundy */
+  --highlight: #d4af37;   /* Gold */
   --border: #23242b;
-  --text-main: #F5F5EF;
-  --text-light: #B8B8A2;
-  --timeline-dot: #FFD700;
-  --timeline-line: linear-gradient(to bottom, #556B2F, #FFD700 90%);
-  --table-header: #181a14;
+  --text-main: #f2f2f5;
+  --text-light: #b0b7c3;
+  --timeline-dot: #d4af37;
+  --timeline-line: linear-gradient(to bottom, #800020 10%, #d4af37 90%);
+  --table-header: #181820;
   --table-row-hover: #23242b;
-  --card-bg: #181a14;
+  --card-bg: #181820;
 }
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
