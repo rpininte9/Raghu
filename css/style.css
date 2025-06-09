@@ -521,12 +521,11 @@ body {
   .tech-grid i, .tech-grid img { font-size: 32px !important; height: 32px; width: 32px; }
 }
 .hero-socials i {
-  color: #ffba08;       /* Gold/yellow to match your theme */
+  color: #ffba08;
   transition: color 0.2s;
 }
-
 .hero-socials i:hover {
-  color: #1a1a1a;       /* Optional: dark color on hover for contrast */
+  color: #1a1a1a;
 }
 .hero-socials a {
   text-decoration: none;      /* Removes underline */
