@@ -528,6 +528,14 @@ body {
 .hero-socials i:hover {
   color: #1a1a1a;       /* Optional: dark color on hover for contrast */
 }
+.hero-socials a {
+  text-decoration: none;      /* Removes underline */
+  outline: none;              /* Removes focus outline if any */
+}
+
+.hero-socials i {
+  color: #ffba08;             /* Your theme gold/yellow */
+}
 
 /* CLIENT/COMPANY NAME and DATES */
 .project-entry h3 {
