@@ -520,6 +520,14 @@ body {
   .skills-col { min-width: unset; max-width: unset; }
   .tech-grid i, .tech-grid img { font-size: 32px !important; height: 32px; width: 32px; }
 }
+.hero-socials i {
+  color: #ffba08;       /* Gold/yellow to match your theme */
+  transition: color 0.2s;
+}
+
+.hero-socials i:hover {
+  color: #1a1a1a;       /* Optional: dark color on hover for contrast */
+}
 
 /* CLIENT/COMPANY NAME and DATES */
 .project-entry h3 {
