@@ -487,29 +487,28 @@ body {
 .project-stack b:after { content: ":"; margin-left: 2px; }
 
 .project-stack .frontend {
-  background: #49c357;  /* strong green as bg, white text */
-  color: #181a1f;
+  color: #35d07f;       /* Vibrant green */
+  font-weight: 700;
 }
 .project-stack .backend {
-  background: #e74c3c;  /* strong red bg, white text */
-  color: #181a1f;
+  color: #e74c3c;       /* Bold red */
+  font-weight: 700;
 }
 .project-stack .devops,
 .project-stack .clouddevops,
 .project-stack .cloud {
-  background: #2980b9;  /* strong blue bg, white text */
-  color: #181a1f;
+  color: #2980b9;       /* Deep blue */
+  font-weight: 700;
 }
 .project-stack .data {
-  background: #e67e22;  /* strong orange bg, white text */
-  color: #181a1f;
+  color: #e67e22;       /* Orange */
+  font-weight: 700;
 }
 .project-stack .analytics,
 .project-stack .monitoring {
-  background: #9b59b6;  /* purple bg, white text */
-  color: #fff;
+  color: #9b59b6;       /* Purple */
+  font-weight: 700;
 }
-
 /* RESPONSIBILITIES/ACHIEVEMENTS: INVERTED */
 .project-achievements {
   background: none !important;
