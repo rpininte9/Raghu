@@ -7,21 +7,21 @@
 }
 :root {
   --bg-main: #101014;
-  --bg-alt: #1c241b;
-  --glass-bg: rgba(20, 30, 20, 0.97);
-  --navbar-bg: #182114;
-  --accent: #194d33;         /* Forest green */
-  --accent-dark: #133521;    /* Deep forest */
-  --accent-light: #b87333;   /* Copper */
-  --highlight: #e0a96d;      /* Light copper/gold */
+  --bg-alt: #181b22;
+  --glass-bg: rgba(20, 24, 34, 0.97);
+  --navbar-bg: #181b22;
+  --accent: #3d4655;         /* Gunmetal */
+  --accent-dark: #23272f;    /* Deep gunmetal */
+  --accent-light: #008cff;   /* Electric blue */
+  --highlight: #00bfff;      /* Bright blue */
   --border: #23242b;
-  --text-main: #f4f8f6;
-  --text-light: #a4b6ad;
-  --timeline-dot: #e0a96d;
-  --timeline-line: linear-gradient(to bottom, #194d33, #e0a96d 90%);
-  --table-header: #1c241b;
+  --text-main: #f6f8fa;
+  --text-light: #b0bacb;
+  --timeline-dot: #00bfff;
+  --timeline-line: linear-gradient(to bottom, #3d4655, #00bfff 90%);
+  --table-header: #1a1c22;
   --table-row-hover: #23242b;
-  --card-bg: #1c241b;
+  --card-bg: #181b22;
 }
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
