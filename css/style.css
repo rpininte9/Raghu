@@ -6,19 +6,19 @@
   font-family: 'Inter', sans-serif;
 }
 :root {
-  --bg-main: #101014;
-  --bg-alt: #181820;
+  --bg-main: #101014;          /* Black */
+  --bg-alt: #181820;           /* Very dark gray */
   --glass-bg: rgba(18, 18, 30, 0.96);
   --navbar-bg: #18181e;
-  --accent: #800020;
+  --accent: #800020;           /* Burgundy */
   --accent-dark: #2c1a1a;
   --accent-light: #b22234;
-  --highlight: #6b8e23;    /* Olive green */
+  --highlight: #49505a;        /* Slate gray */
   --border: #23242b;
   --text-main: #f2f2f5;
-  --text-light: #b0b7c3;
-  --timeline-dot: #6b8e23;
-  --timeline-line: linear-gradient(to bottom, #800020 10%, #6b8e23 90%);
+  --text-light: #9ba1ab;
+  --timeline-dot: #49505a;
+  --timeline-line: linear-gradient(to bottom, #800020 10%, #49505a 90%);
   --table-header: #181820;
   --table-row-hover: #23242b;
   --card-bg: #181820;
