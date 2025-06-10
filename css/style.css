@@ -534,11 +534,6 @@ body {
   background: linear-gradient(90deg, var(--highlight) 0%, var(--accent) 100%);
   color: #faf8fa;
   box-shadow: 0 8px 20px rgba(61,70,85,0.13);
-  .timeline {
-  position: relative;
-  margin: 2rem 0 2rem 0;
-  padding: 2rem 0;
-}
 .timeline {
   position: relative;
   margin: 2rem 0 2rem 0;
