@@ -12,6 +12,8 @@
   --text-main: #f2f2f5;
   --text-light: #9ba1ab;
   --card-bg: #181820;
+  --timeline-line: #800020;
+  --timeline-dot: #b22234;
 }
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
@@ -535,8 +537,7 @@ body {
   color: #faf8fa;
   box-shadow: 0 8px 20px rgba(61,70,85,0.13);
 
-  /* --- Timeline  --- */
-
+ /* --- Timeline  --- */
 .timeline {
   position: relative;
   margin: 2rem 0 2rem 0;
@@ -549,7 +550,7 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: var(--timeline-line);
+  background: var(--timeline-line, #800020);
   transform: translateX(-50%);
   border-radius: 2px;
 }
@@ -586,7 +587,7 @@ body {
   top: 2rem;
   width: 20px;
   height: 20px;
-  background: var(--timeline-dot);
+  background: var(--timeline-dot, #b22234);
   border-radius: 50%;
   border: 3px solid var(--bg-main);
   box-shadow: 0 0 0 4px var(--accent-light);
