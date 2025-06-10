@@ -114,11 +114,65 @@ body {
 }
 
 .hero-image-block {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-image-frame-bg {
+  position: relative;
+  width: 420px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Center the whole frame in its parent */
+  margin: 0 auto;
+}
 
+.hero-image-bg-outer,
+.hero-image-bg-inner {
+  position: absolute;
+  border-radius: 32px;
+  left: 0; top: 0; right: 0; bottom: 0;
+  margin: auto;
+}
+
+.hero-image-bg-outer {
+  width: 100%;
+  height: 100%;
+  background: rgba(80,0,32,0.15); /* or your bg color */
+  z-index: 1;
+}
+
+.hero-image-bg-inner {
+  width: 80%;
+  height: 80%;
+  background: rgba(80,0,32,0.25); /* or your bg color */
+  z-index: 2;
+}
+
+/* The image card itself is centered in the frame */
+.hero-image-card {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 32px;
+  box-shadow: 0 8px 40px 0 var(--border);
+  padding: 0;
+}
+
+.hero-image-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
 }
 .hero-title {
   font-size: 3.5rem;
