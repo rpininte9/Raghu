@@ -539,6 +539,11 @@ body {
   margin: 2rem 0 2rem 0;
   padding: 2rem 0;
 }
+.timeline {
+  position: relative;
+  margin: 2rem 0 2rem 0;
+  padding: 2rem 0;
+}
 .timeline:before {
   content: '';
   position: absolute;
@@ -627,7 +632,7 @@ body {
   }
   .timeline-item:before { left: -10px; right: auto; }
 }
-}
+
 /* --- PROJECTS TABLE --- */
 .projects-table-container { overflow-x: auto; margin-top: 2.2rem; }
 .projects-table {
