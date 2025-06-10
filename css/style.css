@@ -135,48 +135,48 @@ body {
   height: 420px;
 }
 
+/* === HERO FRAMES ENTRANCE & HOVER ANIMATION === */
 .hero-bg-box {
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 2rem;
-  pointer-events: none;
+  transition: transform 0.7s cubic-bezier(.4,2,.3,1), box-shadow 0.7s, opacity 0.5s;
+  opacity: 0;
+  animation: hero-fadein-frame 1.2s forwards;
 }
-
-.hero-bg-box-1 {
-  width: 420px;
-  height: 420px;
-  background: rgba(80, 0, 32, 0.15);
-  z-index: 1;
+.hero-bg-box-1 { animation-delay: 0.2s; }
+.hero-bg-box-2 { animation-delay: 0.4s; }
+@keyframes hero-fadein-frame {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.93);}
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1);}
 }
-.hero-bg-box-2 {
-  width: 340px;
-  height: 340px;
-  background: rgba(80, 0, 32, 0.25);
-  z-index: 2;
+.hero-image-frame:hover .hero-bg-box-1 {
+  transform: translate(-50%, -50%) scale(1.05) rotate(2deg);
+  box-shadow: 0 8px 40px 8px rgba(128,0,32,0.08);
 }
-
+.hero-image-frame:hover .hero-bg-box-2 {
+  transform: translate(-50%, -50%) scale(1.1) rotate(-2deg);
+  box-shadow: 0 8px 60px 12px rgba(80,0,32,0.13);
+}
 .hero-image-card {
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  width: 270px;
-  height: 330px;
-  background: transparent;
-  border-radius: 32px;
-  box-shadow: 0 8px 40px 0 var(--border, #23242b);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  opacity: 0;
+  animation: hero-fadein-img 1.2s 0.7s forwards;
+}
+@keyframes hero-fadein-img {
+  from { opacity:0; transform: translate(-50%, -50%) scale(0.93);}
+  to { opacity:1; transform: translate(-50%, -50%) scale(1);}
 }
 
-.hero-image-card img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 20px;
+/* === HERO BUTTON ANIMATION === */
+.hero-btn {
+  animation: hero-btn-pop 2s infinite alternate;
 }
+@keyframes hero-btn-pop {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.04) translateY(-3px);}
+}
+.hero-btn:hover {
+  animation: none;
+  transform: scale(1.07) translateY(-2px);
+}
+
 
 /* Responsive: Stack on mobile */
 @media (max-width: 950px) {
@@ -221,9 +221,21 @@ body {
   margin-bottom: 0.3em;
   letter-spacing: 1.5px;
 }
-.hero-title .highlight {
-  color: var(--accent);
-  font-weight: 800;
+/* === HERO TYPEWRITER EFFECT === */
+.hero-title {
+  position: relative;
+}
+#typewriter {
+  color: var(--accent-light);
+  border-right: 2px solid var(--accent-light);
+  padding-left: 0.2em;
+  animation: blink-caret 0.8s step-end infinite;
+}
+@keyframes blink-caret {
+  0%,100% { border-color: var(--accent-light);}
+  50% { border-color: transparent;}
+}
+
 }
 .hero-subtitle {
   font-size: 1.45rem;
@@ -236,24 +248,53 @@ body {
   gap: 1.1em;
   margin-bottom: 2.2em;
 }
+/* === SOCIAL ICON TOOLTIP & HOVER EFFECTS === */
 .hero-socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--navbar-bg);
-  border-radius: 1em;
-  width: 54px;
-  height: 54px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-size: 2rem;
-  text-decoration: none;
-  outline: none;
+  position: relative;
+}
+.hero-socials a::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -2.2em;
+  left: 50%; transform: translateX(-50%);
+  background: var(--glass-bg);
+  color: var(--accent-light);
+  border-radius: 6px;
+  padding: 2px 10px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 0.9em;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+.hero-socials a:hover::after { opacity: 1; }
+
 }
 .hero-socials a:hover {
   transform: scale(1.13);
   box-shadow: 0 6px 16px var(--highlight);
 }
+/* === SMOOTH SCROLL ARROW === */
+.scroll-down {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.scroll-down span {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(14px);}
+}
+.scroll-down:hover { color: var(--accent-light); }
 .hero-socials i {
   color: var(--highlight);
   transition: color 0.2s;
