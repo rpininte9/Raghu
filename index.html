@@ -222,5 +222,25 @@
   <script>
     AOS.init();
   </script>
+  <script>
+const texts = [
+  "a Full Stack Engineer.",
+  "a Cloud Enthusiast.",
+  "a Tech Explorer.",
+  "a CI/CD Automator."
+];
+let count = 0, index = 0, currentText = "", letter = "";
+(function type() {
+  if (count === texts.length) count = 0;
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+  document.getElementById('typewriter').textContent = letter;
+  if (letter.length === currentText.length) {
+    count++; index = 0; setTimeout(type, 1100);
+  } else {
+    setTimeout(type, 70);
+  }
+})();
+</script>
 </body>
 </html>
