@@ -103,6 +103,7 @@ body {
   background: linear-gradient(120deg, #181820 0%, #800020 100%);
   padding: 0;
 }
+
 .hero-content {
   display: flex;
   flex-direction: row;
@@ -113,6 +114,7 @@ body {
   gap: 4rem;
   margin: 0 auto;
 }
+
 .hero-text-block {
   flex: 1;
   display: flex;
@@ -121,83 +123,13 @@ body {
   justify-content: center;
   min-width: 320px;
 }
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #f2f2f5;
-  margin-bottom: 0.3em;
-  letter-spacing: 1.5px;
-}
-.hero-title .highlight {
-  color: var(--accent);
-  font-weight: 800;
-}
-.hero-subtitle {
-  font-size: 1.45rem;
-  color: var(--accent-light);
-  margin-bottom: 1.6em;
-  letter-spacing: 1px;
-}
-.hero-socials {
-  display: flex;
-  gap: 1.1em;
-  margin-bottom: 2.2em;
-}
-.hero-socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--navbar-bg);
-  border-radius: 1em;
-  width: 54px;
-  height: 54px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-size: 2rem;
-  text-decoration: none;
-  outline: none;
-}
-.hero-socials a:hover {
-  transform: scale(1.13);
-  box-shadow: 0 6px 16px var(--highlight);
-}
-.hero-socials i {
-  color: var(--highlight);
-  transition: color 0.2s;
-}
-.hero-socials i:hover {
-  color: var(--accent-dark);
-}
-.hero-btn {
-  background: linear-gradient(90deg, var(--highlight) 10%, var(--accent) 100%);
-  color: #faf8fa;
-  font-size: 1.45rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 16px;
-  padding: 1.1em 2.9em;
-  margin-top: 1.2em;
-  box-shadow: 0 6px 26px 0 var(--highlight);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7em;
-  cursor: pointer;
-  transition: background 0.22s, color 0.22s, box-shadow 0.22s;
-}
-.hero-btn:hover {
-  background: linear-gradient(90deg, var(--accent) 10%, var(--highlight) 100%);
-  color: #f2f2f5;
-  box-shadow: 0 10px 40px var(--highlight);
-}
-.hero-btn svg {
-  font-size: 1.2em;
-}
+
 .hero-image-block {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero-image-frame {
   position: relative;
   width: 420px;
@@ -233,7 +165,7 @@ body {
   height: 330px;
   background: transparent;
   border-radius: 32px;
-  box-shadow: 0 8px 40px 0 #23242b;
+  box-shadow: 0 8px 40px 0 var(--border, #23242b);
   z-index: 3;
   display: flex;
   align-items: center;
