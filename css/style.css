@@ -203,6 +203,7 @@ body {
   width: 420px;
   height: 420px;
 }
+
 .hero-bg-box {
   position: absolute;
   left: 50%; top: 50%;
@@ -210,6 +211,7 @@ body {
   border-radius: 2rem;
   pointer-events: none;
 }
+
 .hero-bg-box-1 {
   width: 420px;
   height: 420px;
@@ -222,6 +224,7 @@ body {
   background: rgba(80, 0, 32, 0.25);
   z-index: 2;
 }
+
 .hero-image-card {
   position: absolute;
   left: 50%; top: 50%;
@@ -230,12 +233,13 @@ body {
   height: 330px;
   background: transparent;
   border-radius: 32px;
-  box-shadow: 0 8px 40px 0 var(--border, #23242b);
+  box-shadow: 0 8px 40px 0 #23242b;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero-image-card img {
   max-width: 100%;
   max-height: 100%;
