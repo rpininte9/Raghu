@@ -480,7 +480,113 @@ body {
     width: 32px;
   }
 }
-
+/* --- PROJECTS SECTION --- */
+.section h2 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.project-dossier {
+  margin-top: 2.2rem;
+}
+.project-entry {
+  margin-bottom: 2.5rem;
+  background: rgba(24,24,32,0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(44,44,64,0.08);
+  padding: 1.3rem 2rem 1.2rem 2rem;
+  border: 1px solid #23242b;
+  max-width: 700px;
+}
+.project-entry h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--navbar-bg);
+  background: var(--highlight);
+  display: inline-block;
+  border-radius: 6px;
+  padding: 0 12px;
+}
+.project-entry h3 .client {
+  color: var(--navbar-bg);
+  background: var(--highlight);
+  font-weight: 900;
+  font-size: 1.18em;
+  border-radius: 6px;
+  padding: 0 7px;
+}
+.project-entry h3 .dates {
+  color: var(--navbar-bg);
+  background: var(--accent);
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 0.5em;
+  border-radius: 6px;
+  padding: 0 7px;
+}
+.project-stack {
+  font-size: 0.95rem;
+  color: #b9b9be;
+  margin-bottom: 0.9rem;
+  margin-top: 0.2rem;
+}
+.project-stack span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 1.03em;
+}
+.project-stack b {
+  padding: 1px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-right: 4px;
+  font-size: 1em;
+  color: #fff;
+}
+.project-stack b:after { content: ":"; margin-left: 2px; }
+.project-stack .frontend { color: #3d4655; font-weight: 700; }
+.project-stack .backend { color: #800020; font-weight: 700; }
+.project-stack .devops,
+.project-stack .clouddevops,
+.project-stack .cloud { color: #4679a3; font-weight: 700; }
+.project-stack .data { color: #a83232; font-weight: 700; }
+.project-stack .analytics,
+.project-stack .monitoring { color: #758fa3; font-weight: 700; }
+.project-achievements {
+  margin-left: 12px;
+  padding-left: 1.2em;
+  background: none !important;
+  color: var(--text-main) !important;
+  border-radius: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.project-achievements li {
+  margin-bottom: 0.45em;
+  line-height: 1.65;
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  .section h2 { font-size: 1.4rem; text-align: left; }
+  .project-entry {
+    padding: 1rem 0.7rem;
+    max-width: 100%;
+  }
+  .project-entry h3 {
+    font-size: 1.07rem;
+    padding: 0 6px;
+  }
+  .project-stack span {
+    display: block;
+    margin-bottom: 0.12em;
+  }
+  .project-achievements {
+    margin-left: 6px;
+    padding-left: 1.1em;
+  }
+}
 /* Projects */
 .project-grid {
   display: flex;
