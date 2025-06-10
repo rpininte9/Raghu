@@ -94,17 +94,18 @@ body {
   border-radius: 18px;
   transition: background 0.18s;
 }
-
 .hero-section {
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(120deg, #181820 0%, #800020 100%);
-  padding: 0 0 0 0;
+  padding: 0;
 }
+
 .hero-content {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 1200px;
@@ -113,59 +114,66 @@ body {
   margin: 0 auto;
 }
 
-.hero-image-block {
+.hero-text-block {
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  min-width: 320px;
 }
 
-.hero-image-frame-bg {
+.hero-image-block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-frame {
   position: relative;
   width: 420px;
   height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Center the whole frame in its parent */
-  margin: 0 auto;
 }
 
-.hero-image-bg-outer,
-.hero-image-bg-inner {
+.hero-bg-box {
   position: absolute;
-  border-radius: 32px;
-  left: 0; top: 0; right: 0; bottom: 0;
-  margin: auto;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  pointer-events: none;
 }
 
-.hero-image-bg-outer {
-  width: 100%;
-  height: 100%;
-  background: rgba(80,0,32,0.15); /* or your bg color */
+.hero-bg-box-1 {
+  width: 420px;
+  height: 420px;
+  background: rgba(80, 0, 32, 0.15);
   z-index: 1;
 }
 
-.hero-image-bg-inner {
-  width: 80%;
-  height: 80%;
-  background: rgba(80,0,32,0.25); /* or your bg color */
+.hero-bg-box-2 {
+  width: 340px;
+  height: 340px;
+  background: rgba(80, 0, 32, 0.25);
   z-index: 2;
 }
 
-/* The image card itself is centered in the frame */
 .hero-image-card {
-  position: relative;
-  width: 80%;
-  height: 80%;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 330px;
+  background: transparent;
+  border-radius: 32px;
+  box-shadow: 0 8px 40px 0 var(--border, #23242b);
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  border-radius: 32px;
-  box-shadow: 0 8px 40px 0 var(--border);
-  padding: 0;
 }
 
 .hero-image-card img {
@@ -173,6 +181,44 @@ body {
   max-height: 100%;
   object-fit: contain;
   border-radius: 20px;
+  box-shadow: 0 2px 22px #0002;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 950px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .hero-text-block {
+    align-items: center;
+    min-width: unset;
+  }
+  .hero-image-frame {
+    width: 80vw;
+    height: 80vw;
+    max-width: 420px;
+    max-height: 420px;
+  }
+  .hero-bg-box-1 {
+    width: 80vw;
+    height: 80vw;
+    max-width: 420px;
+    max-height: 420px;
+  }
+  .hero-bg-box-2 {
+    width: 64vw;
+    height: 64vw;
+    max-width: 340px;
+    max-height: 340px;
+  }
+  .hero-image-card {
+    width: 50vw;
+    height: 60vw;
+    max-width: 270px;
+    max-height: 330px;
+  }
 }
 .hero-title {
   font-size: 3.5rem;
