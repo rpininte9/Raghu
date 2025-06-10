@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 <body>
   <!-- NAVBAR -->
@@ -40,19 +39,19 @@
           <a href="https://github.com/yourprofile" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
           <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <a href="assets/Your_Resume.pdf" class="hero-btn" download>
+        <button class="hero-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22" fill="currentColor" style="margin-right:0.3em;">
             <path d="M4 2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v10h10V4H4zm2 2h6v2H6V6zm0 3h6v2H6V9z"/>
           </svg>
           Resume
-        </a>
+        </button>
       </div>
       <div class="hero-image-block">
         <div class="hero-image-frame">
           <div class="hero-bg-box hero-bg-box-1"></div>
           <div class="hero-bg-box hero-bg-box-2"></div>
           <div class="hero-image-card">
-            <img src="assets/images/Developer Me.png" alt="Full Stack Engineer Illustration" />
+            <img src="assests/images/Developer Me.png" alt="Full Stack Engineer Illustration" />
           </div>
         </div>
       </div>
@@ -66,38 +65,6 @@
       <p>
         I'm Raghu, a Senior Java Full Stack Engineer with 9+ years of experience in designing, developing, and deploying scalable web applications, microservices, and enterprise software. My expertise spans Java, Spring Boot, Angular, React, AWS, Azure, DevOps, and modern cloud solutions. I am passionate about building robust backend systems, seamless UIs, and automating everything from CI/CD pipelines to cloud infrastructure.
       </p>
-    </div>
-  </section>
-
-  <!-- VISUAL RESUME -->
-  <section class="section glass light-bg" id="visual-resume">
-    <div class="container">
-      <h2>Visual Resume</h2>
-      <p>
-        <!-- Place your visual resume graphic or content here -->
-        <img src="assets/images/visual-resume.png" alt="Visual Resume" style="max-width:100%;border-radius:12px;">
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section glass light-bg" id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Online Banking System</h3>
-          <p>Developed a scalable banking platform using Java, Spring Boot, Angular, and AWS. Implemented microservices, authentication, and real-time notifications.</p>
-        </div>
-        <div class="project-card">
-          <h3>Cloud Monitoring Dashboard</h3>
-          <p>Created a dashboard for multi-cloud resource monitoring with React, Node.js, and Azure. Integrated REST APIs and real-time analytics.</p>
-        </div>
-        <div class="project-card">
-          <h3>E-commerce ML Platform</h3>
-          <p>Built a predictive analytics engine for e-commerce using Python, Spark, and Kafka, delivering personalized recommendations to millions of users.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -221,4 +188,57 @@
           </div>
           <div class="skill-bar">
             <div class="skill-label">Big Data (Spark/Kafka/Hadoop)</div>
-            <div class="bar"><div
+            <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+            <span class="percent">82%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">DevOps Tools (Terraform, Chef, Puppet)</div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-label">Linux / Windows</div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+            <span class="percent">85%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section glass" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:rpininte.09@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- TYPEWRITER EFFECT JS -->
+  <script>
+const texts = [
+  "A Full Stack Engineer.",
+  "A Cloud Enthusiast.",
+  "A Tech Explorer.",
+  "A CI/CD Automator."
+];
+let count = 0, index = 0, currentText = "", letter = "";
+(function type() {
+  if (count === texts.length) count = 0;
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+  document.getElementById('typewriter').textContent = letter;
+  if (letter.length === currentText.length) {
+    count++; index = 0; setTimeout(type, 1100);
+  } else {
+    setTimeout(type, 70);
+  }
+})();
+  </script>
+</body>
+</html>
