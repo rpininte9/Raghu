@@ -813,3 +813,8 @@ body {
     margin-bottom: 0.12em;
   }
 }
+.back-btn {
+  margin: 2rem 0 0 2rem; /* Adjust as needed for spacing */
+  display: inline-flex;
+  align-items: center;
+}
