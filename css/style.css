@@ -410,7 +410,7 @@ body {
   overflow: hidden;
   min-width: 120px;
   max-width: 200px;
-  box-shadow: 0 1px 4px rgba(61,70,85,0.10);
+  box-shadow: 0 1px 4px rgb(229, 231, 233);
   position: relative;
   display: flex;
   align-items: center;
