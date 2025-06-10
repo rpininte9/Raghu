@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raghu | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -19,8 +17,8 @@
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="pages/visual-resume.html">Visual Resume</a></li>
-          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="#resume">Visual Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#tools">Tools</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -29,38 +27,39 @@
   </header>
 
   <!-- HERO -->
- <section class="hero-section">
-  <div class="hero-content">
-    <div class="hero-text-block">
-      <div class="hero-title">
-        Hi, I am <span class="highlight">Raghu</span>
-        <span id="typewriter"></span>
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <div class="hero-text-block">
+        <div class="hero-title">
+          Hi, I am <span class="highlight">Raghu</span>
+          <span id="typewriter"></span>
+        </div>
+        <div class="hero-subtitle">Sr. Java Full Stack Engineer</div>
+        <div class="hero-socials">
+          <a href="https://github.com/yourprofile" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <button class="hero-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22" fill="currentColor" style="margin-right:0.3em;">
+            <path d="M4 2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v10h10V4H4zm2 2h6v2H6V6zm0 3h6v2H6V9z"/>
+          </svg>
+          Resume
+        </button>
       </div>
-      <div class="hero-subtitle">Sr. Java Full Stack Engineer</div>
-      <div class="hero-socials">
-        <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <button class="hero-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="22" height="22" fill="currentColor" style="margin-right:0.3em;">
-          <path d="M4 2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v10h10V4H4zm2 2h6v2H6V6zm0 3h6v2H6V9z"/>
-        </svg>
-        Resume
-      </button>
-    </div>
-    <div class="hero-image-block">
-      <div class="hero-image-frame">
-        <div class="hero-bg-box hero-bg-box-1"></div>
-        <div class="hero-bg-box hero-bg-box-2"></div>
-        <div class="hero-image-card">
-          <img src="assests/images/Developer Me.png" alt="Full Stack Engineer Illustration" />
+      <div class="hero-image-block">
+        <div class="hero-image-frame">
+          <div class="hero-bg-box hero-bg-box-1"></div>
+          <div class="hero-bg-box hero-bg-box-2"></div>
+          <div class="hero-image-card">
+            <img src="your-image.png" alt="Full Stack Engineer Illustration" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- ABOUT -->
-  <section class="section glass light-bg" id="about" data-aos="fade-up">
+  <section class="section glass light-bg" id="about">
     <div class="container">
       <h2>About Me</h2>
       <p>
@@ -70,7 +69,7 @@
   </section>
 
   <!-- TOOLS & TECHNOLOGIES -->
-  <section class="section glass light-bg" id="tools" data-aos="fade-up">
+  <section class="section glass light-bg" id="tools">
     <div class="container">
       <h2>Tools & Technologies</h2>
       <p>Technologies I use frequently:</p>
@@ -206,9 +205,9 @@
       </div>
     </div>
   </section>
-  
+
   <!-- CONTACT -->
-  <section class="section glass" id="contact" data-aos="fade-up">
+  <section class="section glass" id="contact">
     <div class="container">
       <h2>Contact</h2>
       <form class="contact-form" action="mailto:rpininte.09@gmail.com" method="POST" enctype="text/plain">
@@ -220,11 +219,7 @@
     </div>
   </section>
 
-  <!-- AOS JS (after all content) -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <!-- TYPEWRITER EFFECT JS -->
   <script>
 const texts = [
   "a Full Stack Engineer.",
@@ -244,6 +239,6 @@ let count = 0, index = 0, currentText = "", letter = "";
     setTimeout(type, 70);
   }
 })();
-</script>
+  </script>
 </body>
 </html>
