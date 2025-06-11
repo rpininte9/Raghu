@@ -18,7 +18,7 @@
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
   color: var(--text-main);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Garamond;
   min-height: 100vh;
 }
 
