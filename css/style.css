@@ -38,6 +38,9 @@
 .light-text {
   color: var(--text-light);
 }
+.deemphasized { color: var(--text-light); }
+.light-text { color: #49505a; font-weight: 700; }
+.highlight { color: var(--accent); font-weight: 800; }
 /* ===== BASE STYLES ===== */
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
