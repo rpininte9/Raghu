@@ -100,8 +100,9 @@ body {
 .hero-text-block {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* ensures left alignment */
+  align-items: flex-start;
   justify-content: center;
+  gap: 1.2rem; /* Add this for even vertical spacing */
 }
 .hero-title {
   font-size: 3.5rem;
