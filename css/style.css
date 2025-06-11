@@ -35,9 +35,7 @@
   --timeline-line: #b22234;
   --timeline-dot: #800020;
 }
-.light-text {
-  color: var(--text-light);
-}
+
 .deemphasized { color: var(--text-light); }
 .light-text { color: #49505a; font-weight: 700; }
 .highlight { color: var(--accent); font-weight: 800; }
