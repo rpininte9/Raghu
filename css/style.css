@@ -70,7 +70,7 @@ body {
   color: var(--accent-light);
   background: var(--highlight);
   transform: scale(1.1) rotate(-8deg);
-
+}
 /* === NAVBAR === */
 .navbar {
   position: sticky;
