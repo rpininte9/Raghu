@@ -35,6 +35,9 @@
   --timeline-line: #b22234;
   --timeline-dot: #800020;
 }
+.light-text {
+  color: var(--text-light);
+}
 /* ===== BASE STYLES ===== */
 body {
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-alt) 100%);
