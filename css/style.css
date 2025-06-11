@@ -84,7 +84,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #181820 0%, #800020 100%);
+  /* Black to Burgundy gradient */
+  background: linear-gradient(120deg, #000 0%, #800020 100%);
+  /* If you want to use your variables: */
+  /* background: linear-gradient(120deg, var(--bg-main) 0%, var(--accent) 100%); */
   padding: 0;
 }
 .hero-content {
