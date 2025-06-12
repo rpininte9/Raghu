@@ -747,8 +747,8 @@ body {
 .project-entry h3 .client {
   color: var(--navbar-bg);
   background: var(--highlight);
-  font-weight: 900;
-  font-size: 1.18em;
+  font-weight: 1000;
+  font-size: 2em;
   border-radius: 6px;
   padding: 0 7px;
 }
