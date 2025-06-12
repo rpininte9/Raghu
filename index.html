@@ -271,5 +271,31 @@ toggleBtn.addEventListener('click', () => {
   localStorage.setItem(themeStorageKey, isLight ? 'light' : 'dark');
 });
 </script>
+  <!-- At the end of visual-resume.html and projects.html, before </body>: -->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+const themeStorageKey = 'theme';
+
+function setTheme(isLight) {
+  document.body.classList.toggle('light-theme', isLight);
+  toggleBtn.textContent = isLight ? '🌞' : '🌙';
+}
+
+// On page load, set theme from localStorage or system preference
+const storedTheme = localStorage.getItem(themeStorageKey);
+if (storedTheme) {
+  setTheme(storedTheme === 'light');
+} else {
+  setTheme(prefersLight);
+}
+
+// Toggle theme on button click
+toggleBtn.addEventListener('click', () => {
+  const isLight = !document.body.classList.contains('light-theme');
+  setTheme(isLight);
+  localStorage.setItem(themeStorageKey, isLight ? 'light' : 'dark');
+});
+</script>
 </body>
 </html>
