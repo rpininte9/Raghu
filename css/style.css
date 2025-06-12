@@ -736,12 +736,15 @@ body {
 .project-entry h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
-  color: var(--navbar-bg);
-  background: var(--highlight);
+  font-weight: 900;
+  color: #FF1744;            /* Bright red font */
+  background: #FFE5E8;       /* Bright, pale red background */
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 7px;
   padding: 0 12px;
+  letter-spacing: 0.01em;
+  /* Optional: Add box-shadow for more "pop" */
+  box-shadow: 0 2px 8px 0 rgba(255,23,68,0.05);
 }
 .project-entry h3 .client {
   color: var(--navbar-bg);
