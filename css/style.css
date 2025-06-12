@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
 
 /* ===== THEME VARIABLES ===== */
@@ -9,9 +10,9 @@
   --accent: #800020;
   --accent-dark: #2c1a1a;
   --accent-light: #b22234;
-  --highlight: #49505a;
+  --highlight: #bad0ee;
   --border: #23242b;
-  --text-main: #222330;
+  --text-main: #f2f2f5;
   --text-light: #9ba1ab;
   --card-bg: #181820;
   --timeline-line: #800020;
@@ -30,7 +31,7 @@
   --highlight: #e3d9e1;
   --border: #e0e0eb;
   --text-main: #222330;
-  --text-light: #9ba1ab;
+  --text-light: #4d4d5a;
   --card-bg: #f5f6fa;
   --timeline-line: #b22234;
   --timeline-dot: #800020;
