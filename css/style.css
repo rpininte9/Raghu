@@ -737,8 +737,7 @@ body {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: 900;
-  color: #900C3F;            /* Burgundy font */
-  background: #180e12;      
+  color: #900C3F;            /* Burgundy font */     
   display: inline-block;
   border-radius: 7px;
   padding: 0 12px;
@@ -774,7 +773,7 @@ body {
   font-weight: 700;
   margin-right: 4px;
   font-size: 1em;
-  color: #bb4949;
+  color: #900C3F;
 }
 .project-stack b:after { content: ":"; margin-left: 2px; }
 
