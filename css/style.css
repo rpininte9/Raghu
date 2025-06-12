@@ -442,7 +442,7 @@ body {
 .percent {
   flex: 1;
   text-align: right;
-  color: var(--highlight);
+  color: var(--text-main);
   font-weight: 700;
   font-size: 1.17em;
   letter-spacing: 0.01em;
