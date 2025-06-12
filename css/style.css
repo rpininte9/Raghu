@@ -138,6 +138,14 @@ body {
   /* background: linear-gradient(120deg, var(--bg-main) 0%, var(--accent) 100%); */
   padding: 0;
 }
+.hero-greeting {
+  color: var(--text-light);
+  font-weight: 700;
+}
+.highlight {
+  color: var(--accent);
+  font-weight: 800;
+}
 .hero-content {
   display: flex;
   flex-direction: row;
